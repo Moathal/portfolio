@@ -1,71 +1,81 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    color: #FFFFFF;
-    font-family:'Roboto';
-    text-align: center;
-    background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-family: "Roboto";
+  text-align: center;
+  background-repeat: no-repeat;
 }
-.flex{ display: flex; }
+.flex {
+  display: flex;
+}
 
-html { width: 100%; height: 100%; }
+html {
+  width: 100%;
+  height: 100%;
+}
 
-body , .container { 
-    width: 375px; 
-    height: 100%;
-    border: 1px solid red;
+body,
+.container {
+  width: 375px;
+  height: 100%;
+  border: 1px solid red;
 }
 .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 18;
-    background-image: url(./icons&imgs/Top\ circles.png);
-    background-size: cover;
-    background-color: #191765;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 18;
+  background-image: url(./icons&imgs/Top\ circles.png);
+  background-size: cover;
+  background-color: #191765;
 }
 header {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 45px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8px;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 45px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
 }
 .logo {
-    flex: 0 0 165px;
-    max-height: 36px;
-    font-size: 18px;
-    line-height: 16px;
-    padding: 10px 12px;
-    font-weight: 500;
-    letter-spacing: 0.03em;
+  flex: 0 0 165px;
+  max-height: 36px;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 10px 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 button {
-    background-color: transparent;
-    padding: 8px;
-    flex: 0 0 66px ;
-    min-height: 66px;
-    background-image: url(icons&imgs/hamEnabled.png);
-    background-size: contain;
-    outline: none;
-    border: none;
-    border-radius: 8px;
+  background-color: transparent;
+  padding: 8px;
+  flex: 0 0 66px;
+  min-height: 66px;
+  background-image: url(icons&imgs/hamEnabled.png);
+  background-size: contain;
+  outline: none;
+  border: none;
+  border-radius: 8px;
 }
 section {
-    flex-direction: column;
-    flex: 0 0 154px;
-    width: 327;
-    justify-content: center;
-    gap: 12px;
+  flex-direction: column;
+  flex: 0 0 154px;
+  width: 327;
+  justify-content: center;
+  gap: 12px;
 }
 .mainTxt {
-    font: normal 700 48 72;
-    letter-spacing: 0.37;
-    color: #7D73FC;
+  font: normal 700 48 72;
+  letter-spacing: 0.37;
+  color: #7d73fc;
 }
-.spprtTxt { font: normal 500 32 44; color: #EDECFF; }
+
+.spprtTxt {
+  font: normal 500 32 44;
+  color: #edecff;
+}
 
 button:hover {
-    background-color: #7D73FC;
-    box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  background-color: #7d73fc;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
 }
