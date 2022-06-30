@@ -8,6 +8,9 @@
 
 - HTML & CSS
 
+## Live demo link 
+
+https://moathal.github.io/portfolio/
 
 ### Prerequisites
 
