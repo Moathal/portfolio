@@ -121,15 +121,15 @@ p {
   justify-content: flex-start;
 }
 
-lh {
-    font: normal 500 12 24;
-    color: #9490ff;
-}
-
 .frame > * {
   text-align: left;
   margin: 12px;
   margin-bottom: 0;
+}
+
+lh {
+    font: normal 500 12 24;
+    color: #9490ff;
 }
 
 li {
