@@ -121,7 +121,7 @@ p {
   justify-content: flex-start;
 }
 
-[aria-lable] {
+lh {
     font: normal 500 12 24;
     color: #9490ff;
 }
