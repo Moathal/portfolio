@@ -127,14 +127,14 @@ p {
   margin-bottom: 0;
 }
 
-lh {
-    font: normal 500 12 24;
-    color: #9490ff;
-}
-
 li {
   font: normal 400 15 24;
   color: #f5f5ff;
+}
+
+li.h {
+    font: normal 500 12 24;
+    color: #9490ff;
 }
 
 .spprtItems {
