@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -41,6 +41,7 @@ header {
   margin: 8px;
   width: 100%;
 }
+
 .logo {
   flex: 0 0 165px;
   max-height: 36px;
@@ -112,6 +113,7 @@ p {
   width: 302px;
   flex: 0 0 462.15px;
 }
+
 .frame {
   flex: 0 0 124px;
   list-style: none;
@@ -120,14 +122,11 @@ p {
 }
 
 .frame > * {
-  text-align: left;
-  margin: 12px;
-  margin-bottom: 0px;
-}
-
-h4 {
   font: normal 500 12 24;
   color: #9490ff;
+  text-align: left;
+  margin: 12px;
+  margin-bottom: 0;
 }
 
 li {
@@ -147,7 +146,7 @@ li {
 
 .socialMedia a {
   flex: 0 0 40px;
-  margin: 0px;
+  margin: 0;
 }
 
 img {
@@ -166,5 +165,5 @@ img {
 
 .button:hover {
   background-color: #7d73fc;
-  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8 16 rgba(125, 115, 252, 0.48);
 }
