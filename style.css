@@ -119,11 +119,11 @@ p {
   list-style: none;
   align-items: left;
   justify-content: flex-start;
+  font: normal 500 12 24;
+  color: #9490ff;
 }
 
 .frame > * {
-  font: normal 500 12 24;
-  color: #9490ff;
   text-align: left;
   margin: 12px;
   margin-bottom: 0;
