@@ -181,7 +181,7 @@ li {
   min-width: 200px;
 }
 
-.socialMedia a {
+.socialMedia li {
   flex: 0 0 40px;
   margin: 0;
 }
@@ -234,6 +234,7 @@ li {
 .workBlocks {
   display: grid;
   grid-template-rows: repeat(729px, 4);
+  background-color: transparent;
 }
 
 .featuredImg {
@@ -271,6 +272,7 @@ p.supportingTxt {
   font-size: 20px;
   line-height: 28px;
   align-self: left;
+  text-align: left;
 }
 
 ul.tags {
@@ -338,6 +340,7 @@ ul.tags {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 40px;
+  width: 327px;
 }
 
 form {
