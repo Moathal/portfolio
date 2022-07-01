@@ -147,7 +147,7 @@ body,
 
 ul {
   text-align: left;
-  margin: 0px;
+  margin: 0;
   list-style: none;
 }
 
@@ -168,7 +168,7 @@ li {
   line-height: 24px;
   color: #f5f5ff;
   margin-top: 12px;
-  padding: 0px;
+  padding: 0;
 }
 
 .spprtItems {
@@ -200,11 +200,12 @@ li {
 .work {
   color: #a2a3ae;
 }
+
 .sub-container-2 {
   background-image: url(icons&imgs/recentworkBG.png);
-  background-size: cover;
+  background-size: contain;
   gap: 40px;
-  width: 327px;
+  width: 375px;
   align-items: center;
   align-self: center;
 }
@@ -227,6 +228,7 @@ li {
   line-height: 52px;
   color: #9490ff;
   text-align: left;
+  width: 327px;
 }
 
 .workBlocks {
@@ -244,7 +246,7 @@ li {
 .imgPlaceHolder {
   width: 327px;
   height: 236px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #fff, #fff);
 }
 
 .rightBlock {
@@ -291,7 +293,7 @@ ul.tags {
   padding: 10px 12px;
   flex: 0 0 56px;
   height: 40px;
-  border-left: 1px solid #555555;
+  border-left: 1px solid #555;
   text-align: center;
 }
 
@@ -309,6 +311,7 @@ ul.tags {
   border-radius: 0;
   text-align: center;
 }
+
 .Page {
   gap: 40px;
 }
