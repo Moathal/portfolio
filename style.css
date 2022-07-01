@@ -388,7 +388,7 @@ form {
 .button.normal.preview,
 .button.normal.email:hover {
   background: #7d73fc;
-  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8 16 rgba(125, 115, 252, 0.48);
 }
 
 .button.normal.preview,
