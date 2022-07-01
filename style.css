@@ -7,33 +7,38 @@
     background-repeat: no-repeat;
   }
   
+  /* dominant flex styling */
   .flex {
     display: flex;
   }
-  
-  html {
-    width: 100%;
-  }
-  
-  body,
-  .container {
-    width: 375px;
-  }
-  
+
   .column {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
   
-  .container {
+  html {
+    width: 100%;
+  }
+  
+  body, .main-container, .sub-container {
+    width: 375px;
+  }
+
+  .main-container {
+    background-color: #191765;
+    align-items: stretch;
+    gap: 40px;
+  }
+  
+  .sub-container-1 {
     font-size: 18;
     background-image: url(./icons&imgs/Top\ circles.png);
     background-size: contain;
-    background-color: #191765;
   }
   
-  header {
+  .toolbar{
     flex-direction: row;
     flex: 0 0 45px;
     justify-content: space-between;
@@ -58,7 +63,7 @@
     padding: 8px;
     flex: 0 0 66px;
     min-height: 66px;
-    background-image: url(icons&imgs/hamEnabled.png);
+    background-image: url(icons&imgs/hamEnabled.svg);
     background-size: contain;
     outline: none;
     border: none;
@@ -77,20 +82,29 @@
     align-items: center;
   }
   
-  .mainTxt {
-    font: normal 700 48 72;
-    letter-spacing: 0.37;
+  .mainTxt-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0.37px;
     color: #7d73fc;
   }
   
   .spprtTxt {
-    font: normal 500 32 44;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32;
+    line-height: 44px;
     color: #edecff;
   }
   
   p {
     flex: 0 0 170;
-    font: normal 400 20 28;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
     color: #c8c8d4;
   }
   
@@ -128,17 +142,20 @@
   }
   
   h4 {
-    font: normal 
+    font-style: normal; 
     font-weight: 500; 
     font-size: 12px;
     line-height: 24px;
     color: #9490ff;
     text-align: left;
   }
-  
+
   li {
     text-align: left;
-    font: normal 400 15 24;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
     color: #f5f5ff;
     margin-top: 12px;
     padding: 0px;
@@ -171,6 +188,14 @@
   
   .work {
     color: #a2a3ae;
+  }
+  .sub-container-2 {
+    background-image: url(icons&imgs/recentworkBG.png);
+    background-size: cover;
+  }
+
+  .recentWork{
+    justify-items: start;
   }
   
   .button:hover {
