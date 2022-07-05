@@ -347,6 +347,11 @@ form {
   gap: 24px;
 }
 
+form > * {
+  border: none;
+  outline: none;
+}
+
 .field1 {
   width: 295px;
   height: 16px;
@@ -355,7 +360,56 @@ form {
   padding: 16px;
 }
 
+.field2 {
+  width: 295px;
+  height: 12px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #191765;
+  padding: 16px;
+}
 
+.field3 {
+  min-width: 303px;
+  min-height: 124px;
+  resize: none;
+  text-align: left;
+  padding: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+}
+
+.two {
+  margin-bottom: 0;
+}
+
+.e-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form > input:focus {
+  border: 2px solid #9490f5;
+}
+
+form > input:invalid {
+  border: 2px solid rgba(221, 52, 52, 0.753);
+}
+
+form > input:valid {
+  border: 2px solid rgba(36, 216, 36, 0.897);
+}
 
 .button.normal.preview,
 .button.normal.email:hover {
