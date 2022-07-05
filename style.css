@@ -18,10 +18,6 @@
   align-items: center;
 }
 
-html {
-  width: 100%;
-}
-
 body,
 .main-container,
 .sub-container {
@@ -343,14 +339,25 @@ ul.tags {
   width: 327px;
 }
 
+footer {
+  gap: 12px;
+}
+
 form {
   gap: 24px;
 }
 
+form > * {
+  border: none;
+  outline: none;
+}
+
 .field1 {
-  width: 327px;
-  height: 48px;
+  width: 295px;
+  height: 16px;
   text-align: left;
+  color: #000;
+  padding: 16px;
 }
 
 .field2 {
@@ -366,10 +373,17 @@ form {
 }
 
 .field3 {
-  min-width: 327px;
-  min-height: 148px;
+  min-width: 303px;
+  min-height: 124px;
   resize: none;
   text-align: left;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
 }
 
 .two {
@@ -383,6 +397,18 @@ form {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+}
+
+form > input:focus {
+  border: 2px solid #9490f5;
+}
+
+form > input:invalid {
+  border: 2px solid rgba(221, 52, 52, 0.753);
+}
+
+form > input:valid {
+  border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
 .button.normal.preview,

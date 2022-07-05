@@ -191,13 +191,14 @@
                     <p class="descript">If you have an application you are interested in developing, a feature that you
                         need built or a project that needs coding. I’d love to help with it.</p>
                 </div>
-                <form class="flex column">
-                    <input class="field1" placeholder="Text Input">
-                    <input class="field2" value="jeremy@gmail.com">
-                    <textarea class="field3" placeholder="Enter text here"></textarea>
-                    <button disabled  type="button" class="button normal email">Send</button>
-                </form>
             </section>
+            <footer class="flex column">
+                <form action="https://formspree.io/f/xpzbgqjj" method="POST" id="contact-form" class="flex column">
+                    <input name="name" id="name" type="text" class="field1" placeholder="Text Input" maxlength="30" required>
+                    <input class="field2" name="email" id="email" type="email" placeholder="Examle@gmail.com" required>
+                    <textarea  class="field3" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+                    <button type="submit" class="button normal email">Send</button>
+                   </form>
             <ul class="socialMedia flex">
                 <li><a class="github flex" role="button" href=""><img class="comunic" src="icons&imgs/Icon-GitHub.png"
                             alt="github"></a></li>
@@ -215,6 +216,7 @@
                             alt="medium"></a></li>
             </ul>
             <h5 class="e-address">moathalsabahKachi@gmail.com</h5>
+            </footer>
         </div>
     </div>
 </body>
