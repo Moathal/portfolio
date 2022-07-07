@@ -531,8 +531,9 @@ textarea:valid {
   border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
-form > .desk > input:valid {
-  border: 2px solid rgba(36, 216, 36, 0.897);
+form > input:invalid,
+textarea:invalid {
+  border: 2px solid rgba(221, 52, 52, 0.753);
 }
 
 form > input:focus,
@@ -540,13 +541,12 @@ textarea:focus {
   border: 2px solid #9490f5;
 }
 
-form > .desk > input:focus {
-  border: 2px solid #9490f5;
+form > .desk > input:valid {
+  border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
-form > input:invalid,
-textarea:invalid {
-  border: 2px solid rgba(221, 52, 52, 0.753);
+form > .desk > input:focus {
+  border: 2px solid #9490f5;
 }
 
 form > .desk > input:invalid {
