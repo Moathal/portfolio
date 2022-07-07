@@ -3,6 +3,7 @@
   --mobile-medCont-width: calc((327 / 375) * 100vw);
   --mobile-minCont-width: calc((312 / 375) * 100vw);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +23,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-/* dominant flex styling */
 
 html,
 body,
@@ -75,10 +75,6 @@ body,
   padding: 8px;
   flex: 0 0 66px;
   min-height: 66px;
-}
-
-nav > ul {
-  display: none;
 }
 
 .button.normal {
@@ -155,6 +151,10 @@ ul {
   text-align: left;
   margin: 0;
   list-style: none;
+}
+
+nav > ul {
+  display: none;
 }
 
 h4 {
@@ -327,6 +327,7 @@ ul.tags {
   justify-content: center;
   align-items: center;
 }
+
 .contact {
   color: #9390ff;
   font-weight: 500;
@@ -473,10 +474,6 @@ form > * {
     width: calc((1023 / 1440) * 100vw);
   }
 
-  .elementRight-1 {
-    display: flex;
-  }
-
   .sub-container-2 {
     background-image: url(icons&imgs/desktopSub2BG.png);
   }
@@ -519,6 +516,7 @@ form > * {
   form > .field1 {
     display: none;
   }
+
   .desk {
     display: flex;
     gap: 24px;
@@ -528,10 +526,10 @@ form > * {
   }
 }
 
-form > input:focus,
-textarea:focus,
-form > .desk > input:focus {
-  border: 2px solid #9490f5;
+form > input:valid,
+textarea:valid,
+form > .desk > input:valid {
+  border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
 form > input:invalid,
@@ -540,10 +538,10 @@ form > .desk > input:invalid {
   border: 2px solid rgba(221, 52, 52, 0.753);
 }
 
-form > input:valid,
-textarea:valid,
-form > .desk > input:valid {
-  border: 2px solid rgba(36, 216, 36, 0.897);
+form > input:focus,
+textarea:focus,
+form > .desk > input:focus {
+  border: 2px solid #9490f5;
 }
 
 .button.normal.preview:hover,
