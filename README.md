@@ -6,7 +6,7 @@
 
 ## Screenshots
 ![Alt text](/../desktop-view/icons&imgs/porfoliomobileSs.png?raw=true "Mobile Version")
-![Alt text](/../desktop-view/icons&imgs/porfoliodesktopSs.png?raw=true "Desktop Version")
+![Alt text](/../desktop-view/icons&imgs/portfoliodesktopSs.png?raw=true "Desktop Version")
 
 ## Built With
 
