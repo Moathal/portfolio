@@ -535,6 +535,7 @@ form > * {
   .imgPlaceHolder {
     min-width: calc((684 / 1440) * 100vw);
     height: auto;
+    transition: transform 100ms;
   }
 
   .featuredImg > .one {
@@ -552,10 +553,12 @@ form > * {
   form > textarea {
     width: 660px;
     height: 136px;
+    transition: transform 50ms;
   }
 
   form > input {
     height: 16px;
+    transition: transform 50ms;
   }
 
   form > .field2 {
