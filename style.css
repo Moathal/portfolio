@@ -591,6 +591,18 @@ form > * {
   }
 }
 
+.imgPlaceHolder:hover {
+  transform: scale(0.98);
+}
+
+input:hover {
+  transform: translate(2px);
+}
+
+textarea:hover {
+  transform: translate(2px);
+}
+
 form > input:valid,
 textarea:valid {
   border: 2px solid rgba(36, 216, 36, 0.897);
@@ -616,18 +628,6 @@ form > .desk > input:focus {
 
 form > .desk > input:invalid {
   border: 2px solid rgba(221, 52, 52, 0.753);
-}
-
-.imgPlaceHolder:hover {
-  transform: scale(0.98);
-}
-
-input:hover {
-  transform: translate(2px);
-}
-
-textarea:hover {
-  transform: translate(2px);
 }
 
 .button.normal.preview:hover,
