@@ -28,11 +28,16 @@ html,
 body,
 .main-container,
 .sub-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: fit-content;
+  background-color: #191765;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-container {
-  background-color: #191765;
   align-items: stretch;
   gap: calc((120 / 375) * 100vw);
 }
@@ -192,8 +197,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   height: 72px;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
 .socialMedia {
@@ -359,7 +367,8 @@ ul.tags {
 }
 
 footer {
-  gap: 12px;
+  gap: 88px;
+  margin-bottom: 88px;
 }
 
 form {
@@ -416,6 +425,7 @@ form > * {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  margin-bottom: 8px;
 }
 
 .desk {
@@ -566,6 +576,7 @@ form > * {
 
   .button.normal.email {
     width: 160px;
+    margin-top: 88px;
   }
 
   .reach {
@@ -573,6 +584,7 @@ form > * {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 8px;
   }
 }
 
