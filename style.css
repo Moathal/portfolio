@@ -634,3 +634,15 @@ form > .desk > input:invalid {
 .button.normal.email:disabled {
   background-color: #2a2b33;
 }
+
+.imgPlaceHolder:hover {
+  transform: scale(0.98);
+}
+
+input:hover {
+  transform: translate(2px);
+}
+
+textarea:hover {
+  transform: translate(2px);
+}
