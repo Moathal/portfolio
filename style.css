@@ -106,7 +106,7 @@ body,
 .spprtTxt {
   font-style: normal;
   font-weight: 500;
-  font-size: 32;
+  font-size: 32px;
   line-height: 44px;
   color: #edecff;
 }
@@ -157,6 +157,10 @@ nav > ul {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 h4 {
   font-style: normal;
   font-weight: 500;
@@ -182,6 +186,14 @@ li {
   align-self: center;
   align-items: center;
   gap: 24px;
+}
+
+.reach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 72px;
 }
 
 .socialMedia {
@@ -212,7 +224,7 @@ li {
 
 .sub-container-2 {
   background-image: url(icons&imgs/recentworkBG.png);
-  background-size: contain;
+  background-size: cover;
   gap: 40px;
   width: var(--maxCont-width);
   justify-items: space-between;
@@ -434,12 +446,38 @@ form > * {
     gap: 8px;
   }
 
+  nav > ul > li {
+    width: 77px;
+  }
+
   nav > ul > .nav-link1 {
     padding-bottom: 8px;
   }
 
   .sub-container-1 {
     background-image: url(icons&imgs/twoCirclesHeader.png);
+  }
+
+  .head {
+    flex: 0 0 192;
+  }
+
+  .mainTxt-1 {
+    font-size: 90px;
+    line-height: 105px;
+    color: #9391ff;
+  }
+
+  .spprtTxt {
+    font-size: 40px;
+    line-height: 47px;
+    color: #dfe1e6;
+  }
+
+  .offer {
+    flex: 0 0 155;
+    line-height: 32px;
+    color: #b3bac5;
   }
 
   .elementRight-1 {
@@ -476,6 +514,7 @@ form > * {
 
   .sub-container-2 {
     background-image: url(icons&imgs/desktopSub2BG.png);
+    background-size: contain;
   }
 
   .featuredImg {
@@ -501,7 +540,7 @@ form > * {
   }
 
   form > textarea {
-    width: calc((660 / 1440) * 100vw);
+    width: 660px;
     height: 136px;
   }
 
@@ -523,6 +562,17 @@ form > * {
     max-width: 682px;
     max-height: 48px;
     flex-shrink: 1;
+  }
+
+  .button.normal.email {
+    width: 160px;
+  }
+
+  .reach {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
