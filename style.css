@@ -618,6 +618,18 @@ form > .desk > input:invalid {
   border: 2px solid rgba(221, 52, 52, 0.753);
 }
 
+.imgPlaceHolder:hover {
+  transform: scale(0.98);
+}
+
+input:hover {
+  transform: translate(2px);
+}
+
+textarea:hover {
+  transform: translate(2px);
+}
+
 .button.normal.preview:hover,
 .button.normal.email:hover {
   background: #7d73fc;
@@ -633,16 +645,4 @@ form > .desk > input:invalid {
 .button.normal.preview:disabled,
 .button.normal.email:disabled {
   background-color: #2a2b33;
-}
-
-.imgPlaceHolder:hover {
-  transform: scale(0.98);
-}
-
-input:hover {
-  transform: translate(2px);
-}
-
-textarea:hover {
-  transform: translate(2px);
 }
