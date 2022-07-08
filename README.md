@@ -4,6 +4,10 @@
 
 > This is my portfolio. it includes my projects, little bit about myself and my CV.
 
+## Screenshots
+![Alt text](/../desktop-view/icons&imgs/porfoliomobileSs.png?raw=true "Mobile Version")
+![Alt text](/../desktop-view/icons&imgs/portfoliodesktopSs.png?raw=true "Desktop Version")
+
 ## Built With
 
 - HTML & CSS
