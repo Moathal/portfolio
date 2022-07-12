@@ -43,7 +43,7 @@ body,
 }
 
 .sub-container-1 {
-  font-size: 18;
+  font-size: 18px;
   background-image: url(./icons&imgs/Top\ circles.png);
   background-size: contain;
   gap: 88px;
@@ -117,7 +117,7 @@ body,
 }
 
 .offer {
-  flex: 0 0 170;
+  flex: 0 0 170px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -148,7 +148,7 @@ hr {
 .frame {
   flex: 0 0 124px;
   list-style: none;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -235,7 +235,6 @@ li {
   background-size: cover;
   gap: 40px;
   width: var(--maxCont-width);
-  justify-items: space-between;
   align-self: center;
 }
 
@@ -263,7 +262,7 @@ section.recentWork {
 
 .workBlocks {
   display: grid;
-  grid-template-rows: repeat(729px, 4);
+  grid-template-rows: repeat(4, 729px);
   background-color: transparent;
   row-gap: 40px;
 }
@@ -284,7 +283,7 @@ section.recentWork {
   display: flex;
   flex-direction: column;
   max-width: var(--mobile-medCont-width);
-  min-height: 469;
+  min-height: 469px;
   gap: 24px;
 }
 
@@ -302,7 +301,6 @@ p.supportingTxt {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  align-self: left;
   text-align: left;
 }
 
@@ -335,7 +333,6 @@ ul.tags {
   width: 89px;
   height: 48px;
   background: #7d73fc;
-  align-self: left;
   border-radius: 0;
   text-align: center;
   word-wrap: normal;
@@ -469,7 +466,7 @@ form > * {
   }
 
   .head {
-    flex: 0 0 192;
+    flex: 0 0 192px;
   }
 
   .mainTxt-1 {
@@ -485,7 +482,7 @@ form > * {
   }
 
   .offer {
-    flex: 0 0 155;
+    flex: 0 0 155px;
     line-height: 32px;
     color: #b3bac5;
   }
