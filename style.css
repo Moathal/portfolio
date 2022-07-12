@@ -130,7 +130,7 @@ hr {
   border-bottom: 1px solid #646369;
   flex: 0 0 17px;
   width: var(--mobile-medCont-width);
-  margin: 0.5;
+  margin: 0.5px;
 }
 
 .spprtSect {
