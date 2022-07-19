@@ -62,10 +62,9 @@ a#close {
   width: 40px;
   height: 40px;
   align-self: flex-end;
-
 }
 
-.menu-items>li {
+.menu-items > li {
   align-self: flex-start;
   min-width: var(--mobile-medCont-width);
   height: fit-content;
@@ -219,7 +218,7 @@ ul {
   list-style: none;
 }
 
-nav>ul {
+nav > ul {
   display: none;
 }
 
@@ -379,7 +378,7 @@ ul.tags {
   align-items: center;
 }
 
-.tags>li {
+.tags > li {
   margin: 0;
   padding: 0;
   padding: 10px 12px;
@@ -433,7 +432,7 @@ form {
   gap: 24px;
 }
 
-form>* {
+form > * {
   border: none;
   outline: none;
 }
@@ -509,20 +508,20 @@ form>* {
     line-height: 20px;
   }
 
-  .nav>.button-nav {
+  .nav > .button-nav {
     display: none;
   }
 
-  nav>ul {
+  nav > ul {
     display: flex;
     gap: 8px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     width: 77px;
   }
 
-  nav>ul>.nav-link1 {
+  nav > ul > .nav-link1 {
     padding-bottom: 8px;
   }
 
@@ -600,11 +599,11 @@ form>* {
     transition: transform 100ms;
   }
 
-  .featuredImg>.one {
+  .featuredImg > .one {
     order: 1;
   }
 
-  .featuredImg>.two {
+  .featuredImg > .two {
     order: 2;
   }
 
@@ -612,22 +611,22 @@ form>* {
     width: calc((311 / 1440) * 100vw);
   }
 
-  form>textarea {
+  form > textarea {
     width: 660px;
     height: 136px;
     transition: transform 50ms;
   }
 
-  form>input {
+  form > input {
     height: 16px;
     transition: transform 50ms;
   }
 
-  form>.field2 {
+  form > .field2 {
     width: 652px;
   }
 
-  form>.field1 {
+  form > .field1 {
     display: none;
   }
 
@@ -665,30 +664,30 @@ textarea:hover {
   transform: translate(2px);
 }
 
-form>input:valid,
+form > input:valid,
 textarea:valid {
   border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
-form>input:invalid,
+form > input:invalid,
 textarea:invalid {
   border: 2px solid rgba(221, 52, 52, 0.753);
 }
 
-form>input:focus,
+form > input:focus,
 textarea:focus {
   border: 2px solid #9490f5;
 }
 
-form>.desk>input:valid {
+form > .desk > input:valid {
   border: 2px solid rgba(36, 216, 36, 0.897);
 }
 
-form>.desk>input:focus {
+form > .desk > input:focus {
   border: 2px solid #9490f5;
 }
 
-form>.desk>input:invalid {
+form > .desk > input:invalid {
   border: 2px solid rgba(221, 52, 52, 0.753);
 }
 

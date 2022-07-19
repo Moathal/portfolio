@@ -1,404 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="./index.js" defer></script>
     <title>Mo&apos;athal&apos;s Portfolio</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="toolbar flex">
-      <a class="logo" href="_blank"> Mo&apos;athal S. Kachi</a>
-      <nav class="nav">
-        <a
-          onclick="showMobileMenu()"
-          id="hamburgerButton"
-          class="button-nav"
-          href="#"
-        >
-          <img src="icons&imgs/hamEnabled.png" alt="Hamburger icon" />
-        </a>
-        <ul class="nav-buttons">
-          <li class="nav-link1">
-            <a href="#portfolio" onclick="jumpTo(portfolio)">Portfolio</a>
-          </li>
-          <li class="nav-link1">
-            <a href="#about" onclick="jumpTo(about)">About</a>
-          </li>
-          <li class="nav-link1">
-            <a href="#contact" onclick="jumpTo(contact)">Contact</a>
-          </li>
-          <li class="nav-link2">
-            <a href="#reach" onclick="jumpTo(reach)"
-              ><img src="icons&imgs/Icon-Mail.png" alt="Mail icon"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+        <a class="logo" href="_blank"> Mo&apos;athal S. Kachi</a>
+        <nav class="nav">
+            <a onclick="showMobileMenu()" id="hamburgerButton" class="button-nav" href="#">
+                <img src="icons&imgs/hamEnabled.png" alt="Hamburger icon" />
+            </a>
+            <ul class="nav-buttons">
+                <li class="nav-link1">
+                    <a href="#portfolio" onclick="jumpTo(portfolio)">Portfolio</a>
+                </li>
+                <li class="nav-link1">
+                    <a href="#about" onclick="jumpTo(about)">About</a>
+                </li>
+                <li class="nav-link1">
+                    <a href="#contact" onclick="jumpTo(contact)">Contact</a>
+                </li>
+                <li class="nav-link2">
+                    <a href="#reach" onclick="jumpTo(reach)"><img src="icons&imgs/Icon-Mail.png" alt="Mail icon" /></a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div id="mobileMenu" class="mobile-menu flex column">
-      <ul class="menu-items">
-        <li class="close">
-          <a href="#" onclick="closeMobileMenu()" id="close"
-            ><img src="icons&imgs/Icon.png" alt="close icon"
-          /></a>
-        </li>
-        <li>
-          <a class="menu-item" onclick="jumpTo(portfolio)" href="#portfolio"
-            >Portfolio</a
-          >
-        </li>
-        <li>
-          <a class="menu-item" onclick="jumpTo(about)" href="#about">About</a>
-        </li>
-        <li>
-          <a class="menu-item" onclick="jumpTo(contact)" href="#contact"
-            >Contact</a
-          >
-        </li>
-      </ul>
+        <ul class="menu-items">
+            <li class="close">
+                <a href="#" onclick="closeMobileMenu()" id="close"><img src="icons&imgs/Icon.png"
+                        alt="close icon" /></a>
+            </li>
+            <li>
+                <a class="menu-item" onclick="jumpTo(portfolio)" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a class="menu-item" onclick="jumpTo(about)" href="#about">About</a>
+            </li>
+            <li>
+                <a class="menu-item" onclick="jumpTo(contact)" href="#contact">Contact</a>
+            </li>
+        </ul>
     </div>
     <div class="main-container flex column">
-      <div id="about" class="sub-container-1 flex column">
-        <section class="headline flex column">
-          <div class="head flex column">
-            <h1 class="mainTxt-1">Mo&apos;athal</h1>
+        <div id="about" class="sub-container-1 flex column">
+            <section class="headline flex column">
+                <div class="head flex column">
+                    <h1 class="mainTxt-1">Mo&apos;athal</h1>
 
-            <h3 class="spprtTxt">Software Developer</h3>
-          </div>
+                    <h3 class="spprtTxt">Software Developer</h3>
+                </div>
 
-          <div class="spprtSect flex column">
-            <p class="offer">
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don’t hesitate to contact me.
-            </p>
+                <div class="spprtSect flex column">
+                    <p class="offer">
+                        I can help you build a product , feature or website Look through
+                        some of my work and experience! If you like what you see and have
+                        a project you need coded, don’t hesitate to contact me.
+                    </p>
 
-            <hr class="divider-1" />
+                    <hr class="divider-1" />
 
-            <section class="sect flex">
-              <div class="frame">
-                <h4>Languages</h4>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
+                    <section class="sect flex">
+                        <div class="frame">
+                            <h4>Languages</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Ruby</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
 
-              <div class="frame">
-                <h4>Frameworks</h4>
-                <ul>
-                  <li>Flask</li>
-                  <li>Ruby on Rails</li>
-                  <li>SQlite</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </div>
+                        <div class="frame">
+                            <h4>Frameworks</h4>
+                            <ul>
+                                <li>Flask</li>
+                                <li>Ruby on Rails</li>
+                                <li>SQlite</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
 
-              <div class="frame">
-                <h4>Skills</h4>
-                <ul>
-                  <li>Codekit</li>
-                  <li>Github</li>
-                  <li>Gitlab</li>
-                  <li>Codepen</li>
-                  <li>Terminal</li>
-                </ul>
-              </div>
+                        <div class="frame">
+                            <h4>Skills</h4>
+                            <ul>
+                                <li>Codekit</li>
+                                <li>Github</li>
+                                <li>Gitlab</li>
+                                <li>Codepen</li>
+                                <li>Terminal</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <hr class="divider-1" />
             </section>
-          </div>
 
-          <hr class="divider-1" />
-        </section>
+            <div class="spprtItems flex">
+                <div class="elementRight-1">
+                    <img src="icons&imgs/Group55.png" alt="arrow icon" />
+                    <p class="work">Work</p>
+                </div>
+                <ul class="socialMedia flex">
+                    <li>
+                        <a class="github flex" role="button" href=""><img class="comunic"
+                                src="icons&imgs/Icon-GitHub.png" alt="github icon" /></a>
+                    </li>
 
-        <div class="spprtItems flex">
-          <div class="elementRight-1">
-            <img src="icons&imgs/Group55.png" alt="arrow icon" />
-            <p class="work">Work</p>
-          </div>
-          <ul class="socialMedia flex">
-            <li>
-              <a class="github flex" role="button" href=""
-                ><img
-                  class="comunic"
-                  src="icons&imgs/Icon-GitHub.png"
-                  alt="github icon"
-              /></a>
-            </li>
+                    <li>
+                        <a class="linkedin flex" role="button" href=""><img class="comunic"
+                                src="icons&imgs/Icon-Linkedin.png" alt="linkedin icon" /></a>
+                    </li>
 
-            <li>
-              <a class="linkedin flex" role="button" href=""
-                ><img
-                  class="comunic"
-                  src="icons&imgs/Icon-Linkedin.png"
-                  alt="linkedin icon"
-              /></a>
-            </li>
+                    <li>
+                        <a class="angelist flex" role="button" href=""><img class="comunic"
+                                src="icons&imgs/angelist.png" alt="angelist icon" /></a>
+                    </li>
 
-            <li>
-              <a class="angelist flex" role="button" href=""
-                ><img
-                  class="comunic"
-                  src="icons&imgs/angelist.png"
-                  alt="angelist icon"
-              /></a>
-            </li>
+                    <li>
+                        <a class="twitter flex" role="button" href=""><img class="comunic" src="icons&imgs/twitter.png"
+                                alt="twitter icon" /></a>
+                    </li>
 
-            <li>
-              <a class="twitter flex" role="button" href=""
-                ><img
-                  class="comunic"
-                  src="icons&imgs/twitter.png"
-                  alt="twitter icon"
-              /></a>
-            </li>
-
-            <li>
-              <a class="medium flex" role="button" href=""
-                ><img
-                  class="comunic"
-                  src="icons&imgs/Vector.png"
-                  alt="medium icon"
-              /></a>
-            </li>
-          </ul>
-          <div class="elementRight-2 flex">
-            <img src="icons&imgs/Group55.png" alt="arrow icon" />
-            <p class="work">Work</p>
-          </div>
+                    <li>
+                        <a class="medium flex" role="button" href=""><img class="comunic" src="icons&imgs/Vector.png"
+                                alt="medium icon" /></a>
+                    </li>
+                </ul>
+                <div class="elementRight-2 flex">
+                    <img src="icons&imgs/Group55.png" alt="arrow icon" />
+                    <p class="work">Work</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div id="portfolio" class="sub-container-2 flex column">
-        <section class="recentWork flex column">
-          <div class="hdr flex column">
-            <h2 class="mainTxt-2">MY RECENT WORK</h2>
-            <hr class="divider" />
-          </div>
-          <div class="workBlocks">
-            <div class="featuredImg flex column">
-              <img src="_blank" alt="" class="imgPlaceHolder one" />
-              <div class="rightBlock two">
-                <h3 class="titlePost">Multi-Post Stories</h3>
-                <p class="supportingTxt">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  standard dummy text.
-                </p>
-                <ul class="tags flex">
-                  <li>css</li>
-                  <li>html</li>
-                  <li>bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-                <button type="button" disabled class="button normal preview">
-                  See project
-                </button>
-              </div>
-            </div>
-            <div class="featuredImg flex column">
-              <img src="_blank" alt="" class="imgPlaceHolder two" />
-              <div class="rightBlock one">
-                <h3 class="titlePost">Multi-Post Stories</h3>
-                <p class="supportingTxt">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  standard dummy text.
-                </p>
-                <ul class="tags flex">
-                  <li>css</li>
-                  <li>html</li>
-                  <li>bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-                <button type="button" class="button normal preview" disabled>
-                  See project
-                </button>
-              </div>
-            </div>
-            <div class="featuredImg flex column">
-              <img src="_blank" alt="" class="imgPlaceHolder one" />
-              <div class="rightBlock two">
-                <h3 class="titlePost">Multi-Post Stories</h3>
-                <p class="supportingTxt">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  standard dummy text.
-                </p>
-                <ul class="tags flex">
-                  <li>css</li>
-                  <li>html</li>
-                  <li>bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-                <button type="button" disabled class="button normal preview">
-                  See project
-                </button>
-              </div>
-            </div>
-            <div class="featuredImg flex column">
-              <img src="_blank" alt="" class="imgPlaceHolder two" />
-              <div class="rightBlock one">
-                <h3 class="titlePost">Multi-Post Stories</h3>
-                <p class="supportingTxt">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  standard dummy text.
-                </p>
-                <ul class="tags flex">
-                  <li>css</li>
-                  <li>html</li>
-                  <li>bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-                <button type="button" disabled class="button normal preview">
-                  See project
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <footer id="reach" class="flex column">
-        <section class="bottomPage flex column">
-          <div class="cntctHEAD flex column">
-            <h2 id="contact" class="contact">CONTACT US</h2>
-            <p class="descript">
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it.
-            </p>
-          </div>
-        </section>
-        <form
-          action="https://formspree.io/f/xpzbgqjj"
-          method="POST"
-          id="contact-form"
-          class="flex column"
-        >
-          <div class="desk flex">
-            <label hidden for="fname">First Name</label>
-            <input
-              name="fname"
-              id="fname"
-              type="text"
-              class="field1"
-              placeholder="First name"
-              maxlength="30"
-              required
-            />
-            <label hidden for="lname">Last Name</label>
-            <input
-              name="lname"
-              id="lname"
-              type="text"
-              class="field1"
-              placeholder="Last name"
-              maxlength="30"
-              required
-            />
-          </div>
-          <label hidden for="name">Full Name</label>
-          <input
-            name="name"
-            id="name"
-            type="text"
-            class="field1"
-            placeholder="Text Input"
-            maxlength="30"
-            required
-          />
-          <label hidden for="email">Email Address</label>
-          <input
-            class="field2"
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Examle@gmail.com"
-            required
-          />
-          <label hidden for="message">Message</label>
-          <textarea
-            class="field3"
-            id="message"
-            name="message"
-            placeholder="Enter text here"
-            maxlength="500"
-            required
-          ></textarea>
-          <button type="submit" class="button normal email">Send</button>
-        </form>
-      </footer>
+        <div id="portfolio" class="sub-container-2 flex column">
+            <section class="recentWork flex column">
+                <div class="hdr flex column">
+                    <h2 class="mainTxt-2">MY RECENT WORK</h2>
+                    <hr class="divider" />
+                </div>
+                <div class="workBlocks">
+                    <div class="featuredImg flex column">
+                        <img src="_blank" alt="" class="imgPlaceHolder one" />
+                        <div class="rightBlock two">
+                            <h3 class="titlePost">Multi-Post Stories</h3>
+                            <p class="supportingTxt">
+                                A daily selection of privately personalized reads; no accounts
+                                or sign-ups required. has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a
+                                standard dummy text.
+                            </p>
+                            <ul class="tags flex">
+                                <li>css</li>
+                                <li>html</li>
+                                <li>bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                            <button type="button" disabled class="button normal preview">
+                                See project
+                            </button>
+                        </div>
+                    </div>
+                    <div class="featuredImg flex column">
+                        <img src="_blank" alt="" class="imgPlaceHolder two" />
+                        <div class="rightBlock one">
+                            <h3 class="titlePost">Multi-Post Stories</h3>
+                            <p class="supportingTxt">
+                                A daily selection of privately personalized reads; no accounts
+                                or sign-ups required. has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a
+                                standard dummy text.
+                            </p>
+                            <ul class="tags flex">
+                                <li>css</li>
+                                <li>html</li>
+                                <li>bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                            <button type="button" class="button normal preview" disabled>
+                                See project
+                            </button>
+                        </div>
+                    </div>
+                    <div class="featuredImg flex column">
+                        <img src="_blank" alt="" class="imgPlaceHolder one" />
+                        <div class="rightBlock two">
+                            <h3 class="titlePost">Multi-Post Stories</h3>
+                            <p class="supportingTxt">
+                                A daily selection of privately personalized reads; no accounts
+                                or sign-ups required. has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a
+                                standard dummy text.
+                            </p>
+                            <ul class="tags flex">
+                                <li>css</li>
+                                <li>html</li>
+                                <li>bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                            <button type="button" disabled class="button normal preview">
+                                See project
+                            </button>
+                        </div>
+                    </div>
+                    <div class="featuredImg flex column">
+                        <img src="_blank" alt="" class="imgPlaceHolder two" />
+                        <div class="rightBlock one">
+                            <h3 class="titlePost">Multi-Post Stories</h3>
+                            <p class="supportingTxt">
+                                A daily selection of privately personalized reads; no accounts
+                                or sign-ups required. has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a
+                                standard dummy text.
+                            </p>
+                            <ul class="tags flex">
+                                <li>css</li>
+                                <li>html</li>
+                                <li>bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                            <button type="button" disabled class="button normal preview">
+                                See project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="reach" class="flex column">
+            <section class="bottomPage flex column">
+                <div class="cntctHEAD flex column">
+                    <h2 id="contact" class="contact">CONTACT US</h2>
+                    <p class="descript">
+                        If you have an application you are interested in developing, a
+                        feature that you need built or a project that needs coding. I’d
+                        love to help with it.
+                    </p>
+                </div>
+            </section>
+            <form action="https://formspree.io/f/xpzbgqjj" method="POST" id="contact-form" class="flex column">
+                <div class="desk flex">
+                    <label hidden for="fname">First Name</label>
+                    <input name="fname" id="fname" type="text" class="field1" placeholder="First name" maxlength="30"
+                        required />
+                    <label hidden for="lname">Last Name</label>
+                    <input name="lname" id="lname" type="text" class="field1" placeholder="Last name" maxlength="30"
+                        required />
+                </div>
+                <label hidden for="name">Full Name</label>
+                <input name="name" id="name" type="text" class="field1" placeholder="Text Input" maxlength="30"
+                    required />
+                <label hidden for="email">Email Address</label>
+                <input class="field2" name="email" id="email" type="email" placeholder="Examle@gmail.com" required />
+                <label hidden for="message">Message</label>
+                <textarea class="field3" id="message" name="message" placeholder="Enter text here" maxlength="500"
+                    required></textarea>
+                <button type="submit" class="button normal email">Send</button>
+            </form>
+        </footer>
     </div>
     <hr class="divider" />
     <div class="reach">
-      <ul class="socialMedia flex">
-        <li>
-          <a class="github flex" role="button" href=""
-            ><img
-              class="comunic"
-              src="icons&imgs/Icon-GitHub.png"
-              alt="github icon"
-          /></a>
-        </li>
+        <ul class="socialMedia flex">
+            <li>
+                <a class="github flex" role="button" href=""><img class="comunic" src="icons&imgs/Icon-GitHub.png"
+                        alt="github icon" /></a>
+            </li>
 
-        <li>
-          <a class="linkedin flex" role="button" href=""
-            ><img
-              class="comunic"
-              src="icons&imgs/Icon-Linkedin.png"
-              alt="linkedin icon"
-          /></a>
-        </li>
+            <li>
+                <a class="linkedin flex" role="button" href=""><img class="comunic" src="icons&imgs/Icon-Linkedin.png"
+                        alt="linkedin icon" /></a>
+            </li>
 
-        <li>
-          <a class="angelist flex" role="button" href=""
-            ><img
-              class="comunic"
-              src="icons&imgs/angelist.png"
-              alt="angelist icon"
-          /></a>
-        </li>
+            <li>
+                <a class="angelist flex" role="button" href=""><img class="comunic" src="icons&imgs/angelist.png"
+                        alt="angelist icon" /></a>
+            </li>
 
-        <li>
-          <a class="twitter flex" role="button" href=""
-            ><img
-              class="comunic"
-              src="icons&imgs/twitter.png"
-              alt="twitter icon"
-          /></a>
-        </li>
+            <li>
+                <a class="twitter flex" role="button" href=""><img class="comunic" src="icons&imgs/twitter.png"
+                        alt="twitter icon" /></a>
+            </li>
 
-        <li>
-          <a class="medium flex" role="button" href=""
-            ><img class="comunic" src="icons&imgs/Vector.png" alt="medium icon"
-          /></a>
-        </li>
-      </ul>
-      <h5 class="e-address">moathalsabahKachi@gmail.com</h5>
+            <li>
+                <a class="medium flex" role="button" href=""><img class="comunic" src="icons&imgs/Vector.png"
+                        alt="medium icon" /></a>
+            </li>
+        </ul>
+        <h5 class="e-address">moathalsabahKachi@gmail.com</h5>
     </div>
-  </body>
+</body>
+
 </html>
