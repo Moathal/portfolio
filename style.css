@@ -64,12 +64,6 @@ a#close {
   align-self: flex-end;
 }
 
-.menu-items > li {
-  align-self: flex-start;
-  min-width: var(--mobile-medCont-width);
-  height: fit-content;
-}
-
 a.menu-item {
   width: 100%;
   text-align: center;
@@ -244,6 +238,12 @@ li {
   color: #f5f5ff;
   margin-top: 12px;
   padding: 0;
+}
+
+.menu-items > li {
+  align-self: flex-start;
+  min-width: var(--mobile-medCont-width);
+  height: fit-content;
 }
 
 .spprtItems {
