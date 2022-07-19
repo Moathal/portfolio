@@ -37,9 +37,58 @@ body,
   justify-content: center;
 }
 
+.mobile-menu {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(icons&imgs/shapes-mobile-menu.png);
+  background-size: cover;
+  background-position: bottom;
+  background-color: #191765;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  padding: 24px;
+  display: none;
+}
+
+.close {
+  text-align: right;
+}
+
+a#close {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+a.menu-item {
+  width: 100%;
+  text-align: center;
+  height: min-content;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #edecff;
+}
+
+.menu-item::after {
+  content: url("icons&imgs/biggerUnion.png");
+  position: relative;
+  float: right;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 12px;
+  min-width: 12px;
+}
+
 .main-container {
   align-items: stretch;
   gap: calc((120 / 375) * 100vw);
+  margin-top: 75px;
 }
 
 .sub-container-1 {
@@ -50,12 +99,17 @@ body,
 }
 
 .toolbar {
+  position: fixed;
   flex-direction: row;
   flex: 0 0 calc((45 / 375) * 100vw);
   justify-content: space-between;
   align-items: center;
   margin: 8px;
   width: var(--maxCont-width);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(125, 115, 252, 0.08);
 }
 
 .logo {
@@ -184,6 +238,12 @@ li {
   color: #f5f5ff;
   margin-top: 12px;
   padding: 0;
+}
+
+.menu-items > li {
+  align-self: flex-start;
+  min-width: var(--mobile-medCont-width);
+  height: fit-content;
 }
 
 .spprtItems {
@@ -438,6 +498,10 @@ form > * {
     max-height: 72px;
     max-width: 100%;
     justify-content: space-evenly;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   .logo {
