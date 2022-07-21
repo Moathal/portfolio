@@ -437,7 +437,7 @@ ul.tags {
 .modal {
   margin-top: 51px;
   margin-bottom: 51px;
-  width: 327px;
+  max-width: 87.2%;
   padding: 2em;
   margin-left: auto;
   margin-right: auto;
