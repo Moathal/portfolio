@@ -31,7 +31,7 @@ body,
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: #191765;
   align-items: center;
   justify-content: center;
@@ -243,7 +243,7 @@ li {
 .menu-items > li {
   align-self: flex-start;
   min-width: var(--mobile-medCont-width);
-  height: fit-content;
+  height: auto;
 }
 
 .spprtItems {
@@ -307,7 +307,7 @@ section.recentWork {
 
 .hdr {
   gap: 40px;
-  height: fit-content;
+  height: auto;
   width: var(--mobile-medCont-width);
 }
 
@@ -422,6 +422,7 @@ ul.tags {
   margin-bottom: 40px;
   width: var(--mobile-medCont-width);
 }
+
 .modalBackground {
   position: fixed;
   background-color: rgba(5, 1, 68, 0.8);
@@ -443,7 +444,7 @@ ul.tags {
   margin-right: auto;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid #fff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   align-items: center;
   text-align: center;
   gap: 40px;
@@ -464,9 +465,10 @@ div#popupBlock {
   align-self: center;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  gap: 24px;
 }
 
 #descriptions {
@@ -474,17 +476,27 @@ div#popupBlock {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  width: calc((279/375)*100vw);
+  width: calc((279 / 375) * 100vw);
 }
 
 ul#tags-popUp {
   list-style: none;
-  margin-right: auto;
-  min-width: cal((327/375)*100vw);
+  margin-left: auto;
+  min-width: calc((327 / 375) * 100vw);
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+form > * {
+  border: none;
+  outline: none;
 }
 
 ul#tags-popUp > * {
-  border-right: 1px solid #555;
+  border-right: 1px;
+  border-right-style: solid;
+  border-right-color: #555;
 }
 
 .modal-buttons {
@@ -518,11 +530,6 @@ footer {
 
 form {
   gap: 24px;
-}
-
-form > * {
-  border: none;
-  outline: none;
 }
 
 .field1 {
@@ -611,6 +618,16 @@ form > * {
 
   nav > ul > .nav-link1 {
     padding-bottom: 8px;
+  }
+
+  #liveIcon {
+    width: 20%;
+    height: 45%;
+  }
+
+  #sourceIcon {
+    width: 40%;
+    height: 60%;
   }
 
   .sub-container-1 {
@@ -756,6 +773,7 @@ form > * {
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
+    gap: 24px;
   }
 
   #descriptions {
@@ -772,10 +790,12 @@ form > * {
   }
 
   ul#tags-popUp {
+    justify-self: center;
     list-style: none;
-    margin-right: auto;
     margin-left: auto;
-    min-width: cal((327/375)*100vw);
+    min-width: calc((327 / 375) * 100vw);
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .popup-imgPlaceHolder {
@@ -826,13 +846,13 @@ form > .desk > input:invalid {
 .button.normal.preview:hover,
 .button.normal.email:hover {
   background: #7d73fc;
-  box-shadow: 0 8 16 rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .button.normal.preview:active,
 .button.normal.email:active {
   background-color: #5e42d7;
-  box-shadow: 0 8 16 rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .button.normal.preview:disabled,
