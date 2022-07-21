@@ -501,7 +501,7 @@ ul#tags-popUp > * {
 
 .modal-buttons {
   flex-direction: column;
-  width: ((310/684) * 100%);
+  width: calc((310/684) * 100%);
   gap: 24px;
   height: max-content;
 }
