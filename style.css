@@ -422,6 +422,94 @@ ul.tags {
   margin-bottom: 40px;
   width: var(--mobile-medCont-width);
 }
+.modalBackground {
+  position: fixed;
+  background-color: rgba(5, 1, 68, 0.8);
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal {
+  margin-top: 51px;
+  margin-bottom: 51px;
+  width: 327px;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #fff;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.modal-head {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-imgPlaceHolder {
+  width: calc((1108 / 1440) * 100vw);
+  height: auto;
+}
+
+div#popupBlock {
+  width: 75vw;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#descriptions {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: calc((279/375)*100vw);
+}
+
+ul#tags-popUp {
+  list-style: none;
+  margin-right: auto;
+  min-width: cal((327/375)*100vw);
+}
+
+ul#tags-popUp > * {
+  border-right: 1px solid #555;
+}
+
+.modal-buttons {
+  flex-direction: column;
+  width: ((310/684) * 100%);
+  gap: 24px;
+  height: max-content;
+}
+
+#modalSeeLiveButton,
+#modalSeeSourceButton {
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  justify-content: space-between;
+  align-self: center;
+  white-space: nowrap;
+  padding: 8px;
+  min-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 footer {
   gap: 88px;
@@ -649,6 +737,50 @@ form > * {
     align-items: center;
     justify-content: space-evenly;
     gap: 8px;
+  }
+
+  .modalBackground {
+    display: none;
+  }
+
+  .modal {
+    width: calc((1156 / 1440) * 100vw);
+    gap: 40px;
+  }
+
+  #popupBlock {
+    width: calc((684 / 1440) * 100vw);
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #descriptions {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .modal-buttons {
+    flex-direction: row;
+    width: calc((310 / 1440) * 100vw);
+    justify-content: space-evenly;
+  }
+
+  ul#tags-popUp {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: cal((327/375)*100vw);
+  }
+
+  .popup-imgPlaceHolder {
+    max-width: calc((1108 / 1440) * 100vw);
+    height: auto;
   }
 }
 
