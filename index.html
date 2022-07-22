@@ -304,10 +304,11 @@
         <label hidden for="name">Full Name</label>
         <input name="name" id="name" type="text" class="field1" placeholder="Text Input" maxlength="30" required />
         <label hidden for="email">Email Address</label>
-        <input class="field2" name="email" id="email" type="email" placeholder="Examle@gmail.com" required />
+        <input class="field2" name="email" id="email" type="email" placeholder="example@gmail.com (must all be in small case)" required />
         <label hidden for="message">Message</label>
         <textarea class="field3" id="message" name="message" placeholder="Enter text here" maxlength="500"
           required></textarea>
+          <small class="validate-email"></small>
         <button type="submit" class="button normal email">Send</button>
       </form>
     </footer>
