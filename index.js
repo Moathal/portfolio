@@ -101,6 +101,30 @@ function ErrorSpecifier(field, message) {
   errorMessage.style.display = 'block';
 }
 
+function nameFiller() {
+  if (firstName.value === '' || lastName.value === '') {
+    firstName.value = '';
+    lastName.value = '';
+    let spacePosition = 0;
+    for (let i = 0; i < fullName.value.length; i += 1) {
+      if (fullName.value.charAt(spacePosition) !== ' ') {
+        firstName.value += fullName.value.charAt(i);
+        spacePosition += 1;
+      } else {
+        lastName.value = fullName.value.charAt(i);
+      }
+    }
+    lastName.value = lastName.value.replace(/\s/g, '');
+  }
+  if (firstName.value === '' || lastName.value === '') {
+    ErrorSpecifier('Full name', 'should be separated with a space.');
+    return false;
+  } if (fullName.value === '') {
+    fullName.value = `${firstName.value} ${lastName.value}`;
+  }
+  return true;
+}
+
 function checkEmail() {
   if (email.value !== email.value.toLowerCase()) {
     ErrorSpecifier('E-mail', 'should be in lowercase!');
