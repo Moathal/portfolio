@@ -1,6 +1,6 @@
 const mobileMenu = document.getElementById('mobileMenu');
 const popUp = document.getElementById('modalBackground');
-const previews = document.querySelectorAll(
+let previews = document.querySelectorAll(
   '.button.normal.preview.previewButton',
 );
 const title = document.getElementById('title');
@@ -15,47 +15,20 @@ const fullName = document.getElementById('name');
 const email = document.getElementById('email');
 const errorMessage = document.querySelector('.validate-email');
 const submitButton = document.querySelector('.button.normal.email');
+const blocks = document.querySelector('.workBlocks');
 const projects = [
   {
-    title: 'Multi-Post Stories 1',
-    image: 'icons&imgs/SnapshootPortfolio.png',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    toolslist: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: '',
-    sourceLink: '',
-  },
-  {
-    title: 'Multi-Post Stories 2',
-    image: 'icons&imgs/SnapshootPortfolio.png',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    toolslist: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: '',
-    sourceLink: '',
-  },
-  {
-    title: 'Multi-Post Stories 3',
-    image: 'icons&imgs/SnapshootPortfolio.png',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    toolslist: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: '',
-    sourceLink: '',
-  },
-  {
-    title: 'Multi-Post Stories 4',
-    image: 'icons&imgs/SnapshootPortfolio.png',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    toolslist: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: '',
-    sourceLink: '',
+    title: 'Fast Learn',
+    image: 'icons&imgs/1660916560236.png',
+    description: 'This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience. It is an all free website made to help students in finding the right skills required in jobs market of fullstack web development. The courses are available free on the web and our job is to SUBJECTIVELY choose the best. The courses chosen are The Odin Project and CS50 feel free to google them and get to build an opinion about them.',
+    descriptionMin: 'This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience at all. All they need is dedication and time.',
+    toolslist: ['css', 'html', 'bootstrap', 'JavaScript'],
+    liveLink: 'https://Moathal.github.io/Cap-Stone-1',
+    sourceLink: 'https://github.com/Moathal/Cap-Stone-1',
   },
 ];
 
-function addLanguagesList(newList) {
-  const list = document.querySelector('.tags.flex.tags-popUp');
+function addLanguagesList(newList, list) {
   list.innerHTML = '';
   let li = '';
   for (let i = 0; i < newList.length; i += 1) {
@@ -65,14 +38,51 @@ function addLanguagesList(newList) {
   }
 }
 
+function resetProjectsList() {
+  projects.forEach((project, index) => {
+    const div = document.createElement('div');
+    const order = ['one', 'two'];
+    div.classList.add('featuredImg');
+    div.classList.add('flex');
+    div.classList.add('column');
+    if (index % 2 === 0) {
+      order[0] = 'one';
+      order[1] = 'two';
+    } else {
+      order[0] = 'two';
+      order[1] = 'one';
+    }
+    div.innerHTML = `<img src="${projects[index].image}" alt="" class="imgPlaceHolder ${order[0]}" />
+    <div class="rightBlock ${order[1]}">
+      <h3 class="titlePost">${projects[index].title}</h3>
+      <p class="supportingTxt">
+        ${project.descriptionMin}
+      </p>
+      <ul class="tags flex">
+      </ul>
+      <button type="button" id="project${index}" class="button normal preview previewButton">
+        See project
+      </button>
+    </div>`;
+    blocks.appendChild(div);
+    addLanguagesList(projects[index].toolslist, document.querySelector('.tags.flex'));
+    previews = document.querySelectorAll(
+      '.button.normal.preview.previewButton',
+    );
+  });
+}
+
+resetProjectsList();
+
 function openModal(id) {
   const index = id.substring(7, id.length);
+  const list = document.querySelector('.tags.flex.tags-popUp');
   title.innerText = projects[index].title;
   img.src = projects[index].image;
   description.innerText = projects[index].description;
-  addLanguagesList(projects[index].toolslist);
-  liveLink.onclick = `location.href=${projects[index].liveLink};`;
-  sourceLink.onclick = `location.href=${projects[index].sourceLink};`;
+  addLanguagesList(projects[index].toolslist, list);
+  liveLink.setAttribute('onclick', `window.location.href="${projects[index].liveLink}"`);
+  sourceLink.setAttribute('onclick', `window.location.href="${projects[index].sourceLink}"`);
   popUp.style.display = 'block';
 }
 previews.forEach((preview) => preview.addEventListener('click', () => {
