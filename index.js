@@ -54,7 +54,7 @@ function resetProjectsList() {
       order[0] = 'two';
       order[1] = 'one';
     }
-    if (screen.width < 500) {
+    if (window.screen.width < 500) {
       img = projects[index].imageMin;
     } else {
       img = projects[index].image;
@@ -207,4 +207,4 @@ document.getElementById('popUpClose').addEventListener('click', () => {
   closeWindow();
 });
 
-document.addEventListener('resize', resetProjectsList); 
+document.addEventListener('resize', resetProjectsList);
