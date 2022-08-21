@@ -40,6 +40,7 @@ function addLanguagesList(newList, list) {
 }
 
 function resetProjectsList() {
+  blocks.innerHTML = '';
   projects.forEach((project, index) => {
     const div = document.createElement('div');
     const order = ['one', 'two'];
@@ -207,4 +208,6 @@ document.getElementById('popUpClose').addEventListener('click', () => {
   closeWindow();
 });
 
-document.addEventListener('resize', resetProjectsList());
+window.addEventListener('resize', () => {
+  resetProjectsList()
+});
