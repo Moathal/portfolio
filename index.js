@@ -20,6 +20,7 @@ const projects = [
   {
     title: 'Fast Learn',
     image: 'icons&imgs/1660916560236.png',
+    imageMin: 'icons&imgs/mobilefastlearn.png',
     description: 'This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience. It is an all free website made to help students in finding the right skills required in jobs market of fullstack web development. The courses are available free on the web and our job is to SUBJECTIVELY choose the best. The courses chosen are The Odin Project and CS50 feel free to google them and get to build an opinion about them.',
     descriptionMin: 'This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience at all. All they need is dedication and time.',
     toolslist: ['css', 'html', 'bootstrap', 'JavaScript'],
@@ -42,6 +43,7 @@ function resetProjectsList() {
   projects.forEach((project, index) => {
     const div = document.createElement('div');
     const order = ['one', 'two'];
+    let img = '';
     div.classList.add('featuredImg');
     div.classList.add('flex');
     div.classList.add('column');
@@ -52,7 +54,12 @@ function resetProjectsList() {
       order[0] = 'two';
       order[1] = 'one';
     }
-    div.innerHTML = `<img src="${projects[index].image}" alt="" class="imgPlaceHolder ${order[0]}" />
+    if (screen.width < 500) {
+      img = projects[index].imageMin;
+    } else {
+      img = projects[index].image;
+    }
+    div.innerHTML = `<img src="${img}" alt="" class="imgPlaceHolder ${order[0]}" />
     <div class="rightBlock ${order[1]}">
       <h3 class="titlePost">${projects[index].title}</h3>
       <p class="supportingTxt">
@@ -199,3 +206,5 @@ document.getElementById('linkReach').addEventListener('click', () => {
 document.getElementById('popUpClose').addEventListener('click', () => {
   closeWindow();
 });
+
+document.addEventListener('resize', resetProjectsList); 
