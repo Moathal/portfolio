@@ -207,4 +207,4 @@ document.getElementById('popUpClose').addEventListener('click', () => {
   closeWindow();
 });
 
-document.addEventListener('resize', resetProjectsList);
+document.addEventListener('resize', resetProjectsList());
