@@ -75,7 +75,7 @@ function resetProjectsList() {
     blocks.appendChild(div);
     addLanguagesList(projects[index].toolslist, document.querySelector('.tags.flex'));
     previews = document.querySelectorAll(
-      '.button.normal.preview.previewButton',
+      '.button.normal.preview.previewButton'
     );
   });
 }
