@@ -757,10 +757,6 @@ form {
     gap: 8px;
   }
 
-  .modalBackground {
-    display: none;
-  }
-
   .modal {
     width: calc((1156 / 1440) * 100vw);
     gap: 40px;
