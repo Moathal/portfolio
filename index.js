@@ -1,8 +1,5 @@
 const mobileMenu = document.getElementById("mobileMenu");
 const popUp = document.getElementById("modalBackground");
-let previews = document.querySelectorAll(
-	".button.normal.preview.previewButton"
-);
 const title = document.getElementById("title");
 const img = document.getElementById("popup-img");
 const description = document.getElementById("descriptions");
@@ -79,9 +76,6 @@ function resetProjectsList() {
 			projects[index].toolslist,
 			document.querySelector(".tags.flex")
 		);
-		previews = document.querySelectorAll(
-			".button.normal.preview.previewButton"
-		);
 	});
 }
 
@@ -104,11 +98,13 @@ function openModal(id) {
 	);
 	popUp.style.display = "block";
 }
-previews.forEach((preview) =>
-	preview.addEventListener("click", () => {
-		openModal(preview.id);
-	})
-);
+
+blocks.addEventListener('click', (e) => {
+  if (e.target.tagName == "BUTTON" && e.target.innerText == "See project") {
+		openModal(e.target.id);
+	}
+});
+
 
 function showMobileMenu() {
 	mobileMenu.style.display = "block";

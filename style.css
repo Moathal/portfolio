@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   background-repeat: no-repeat;
 }
@@ -425,7 +425,7 @@ ul.tags {
 
 .modalBackground {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.633);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   z-index: 1;
   top: 0;
@@ -665,6 +665,7 @@ form {
   }
 
   hr.divider-1 {
+    margin-top: 2rem;
     width: 100%;
   }
 
