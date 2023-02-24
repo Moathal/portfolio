@@ -18,13 +18,13 @@ let projects = "";
 const frontProjects = [
 	{
 		title: "Middle East Weather",
-		image: "icons&imgs/1677246225145.png",
-		imageMin: "icons&imgs/mobile1677246225145.png",
+		image: "icons&imgs/Screenshot2023-02-24215705.png",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24215705.png",
 		description:
-			"It is an one page web app that shows the weather an time in some countries in middle east. Made using React redux.",
+			"It is a mobile webapp that shows the weather in time in some countries in middle east. Made using React redux.",
 		descriptionMin:
 			"This project lists some Middle eastern countries with their time weather.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		toolslist: ["css", "html", "bootstrap", "JavaScript", "React", "Redux"],
 		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
 		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
 	},
