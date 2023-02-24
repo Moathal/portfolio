@@ -25,8 +25,9 @@ const frontProjects = [
 		descriptionMin:
 			"This project lists some Middle eastern countries with their time weather.",
 		toolslist: ["css", "html", "bootstrap", "JavaScript", "React", "Redux"],
-		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
-		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
+		liveLink:
+			"https://634e92fdfb2d5a612a53cefe--adorable-gumption-bc705f.netlify.app",
+		sourceLink: "https://github.com/Moathal/MiddleEastWeather",
 	},
 	{
 		title: "Dynasty Entertainment",
