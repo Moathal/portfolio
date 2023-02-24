@@ -13,7 +13,9 @@ const email = document.getElementById("email");
 const errorMessage = document.querySelector(".validate-email");
 const submitButton = document.querySelector(".button.normal.email");
 const blocks = document.querySelector(".workBlocks");
-const projects = [
+const projTypes = document.querySelector(".specialty.flex");
+let projects = "";
+const frontProjects = [
 	{
 		title: "Fast Learn",
 		image: "icons&imgs/1660916560236.png",
@@ -25,6 +27,30 @@ const projects = [
 		toolslist: ["css", "html", "bootstrap", "JavaScript"],
 		liveLink: "https://Moathal.github.io/Cap-Stone-1",
 		sourceLink: "https://github.com/Moathal/Cap-Stone-1",
+	},
+	{
+		title: "JS Scientific Calculator",
+		image: "icons&imgs/Screenshot2023-02-23105640.png",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-23105640.png",
+		description:
+			"This website is one of Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it. This calculator dose not use any library yet it is semi fully functional scientific calculator except for big numbers",
+		descriptionMin:
+			"Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it.",
+		toolslist: ["css", "html", "JavaScript"],
+		liveLink: "https://moathal.github.io/Calculater",
+		sourceLink: "https://github.com/Moathal/Calculater",
+	},
+	{
+		title: "Drawing Board",
+		image: "icons&imgs/Screenshot2023-02-23133150.png",
+		imageMin: "icons&imgs/Screenshot2023-02-23133150.png",
+		description:
+			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the umber of pixels on the board",
+		descriptionMin:
+			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience",
+		toolslist: ["css", "html", "JavaScript"],
+		liveLink: "https://moathal.github.io/itch-a-scetch",
+		sourceLink: "https://github.com/Moathal/itch-a-scetch",
 	},
 ];
 
@@ -38,7 +64,7 @@ function addLanguagesList(newList, list) {
 	}
 }
 
-function resetProjectsList() {
+function resetProjectsList(projects) {
 	blocks.innerHTML = "";
 	projects.forEach((project, index) => {
 		const div = document.createElement("div");
@@ -65,7 +91,7 @@ function resetProjectsList() {
       <p class="supportingTxt">
         ${project.descriptionMin}
       </p>
-      <ul class="tags flex">
+      <ul id="list${index}" class="tags flex">
       </ul>
       <button type="button" id="project${index}" class="button normal preview previewButton">
         See project
@@ -74,12 +100,20 @@ function resetProjectsList() {
 		blocks.appendChild(div);
 		addLanguagesList(
 			projects[index].toolslist,
-			document.querySelector(".tags.flex")
+			document.getElementById(`list${index}`)
 		);
 	});
 }
 
-resetProjectsList();
+function projectsTypeChanger(type) {
+	blocks.innerHTML = "Loading...";
+	if (type == "Fullstack") projects = fullProjects;
+	if (type == "Backend") projects = backProjects;
+	if (type == "Frontend") projects = frontProjects;
+	resetProjectsList(projects);
+}
+
+projectsTypeChanger("Frontend");
 
 function openModal(id) {
 	const index = id.substring(7, id.length);
@@ -99,12 +133,11 @@ function openModal(id) {
 	popUp.style.display = "block";
 }
 
-blocks.addEventListener('click', (e) => {
-  if (e.target.tagName == "BUTTON" && e.target.innerText == "See project") {
+blocks.addEventListener("click", (e) => {
+	if (e.target.tagName == "BUTTON" && e.target.innerText == "See project") {
 		openModal(e.target.id);
 	}
 });
-
 
 function showMobileMenu() {
 	mobileMenu.style.display = "block";
@@ -177,6 +210,28 @@ submitButton.addEventListener("click", () => {
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
+});
+
+projTypes.addEventListener("click", (e) => {
+	if (
+		e.target.innerText == "Frontend" ||
+		e.target.innerText == "Backend" ||
+		e.target.innerText == "Fullstack"
+	) {
+		projTypes.childNodes.forEach((child) => {
+			if (child.tagName == "LI") {
+				child.firstChild.style.fontWeight = "normal";
+        child.firstChild.style.color = "#FFF";
+        child.firstChild.style.textDecoration = "none";
+        child.firstChild.style.cursor = "pointer";
+			}
+		});
+		projectsTypeChanger(e.target.innerText);
+		e.target.style.fontWeight = "bold";
+    e.target.style.color = "#9390ff";
+    e.target.style.textDecoration = "underline overline"
+    e.target.style.cursor = "default";
+	}
 });
 
 document.getElementById("hamburgerButton").addEventListener("click", () => {
