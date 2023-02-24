@@ -706,8 +706,9 @@ form {
 
 	.sect {
 		min-width: 100%;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		max-height: 215px;
+    margin-left: 15%;
 	}
 
 	.frame {

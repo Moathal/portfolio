@@ -274,5 +274,7 @@ document.getElementById("popUpClose").addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-	resetProjectsList();
+		if ( projects == fullProjects)projectsTypeChanger("Fullstack");
+	  else if (projects == backProjects) projectsTypeChanger("Backend");
+		else if (projects == frontProjects) 	projectsTypeChanger("Frontend");
 });
