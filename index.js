@@ -93,9 +93,9 @@ const frontProjects = [
 		image: "icons&imgs/Screenshot2023-02-23133150.png",
 		imageMin: "icons&imgs/Screenshot2023-02-23133150.png",
 		description:
-			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the umber of pixels on the board",
+			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the number of pixels on the board. It works only on PCs",
 		descriptionMin:
-			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience",
+			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience. It works only on PCs",
 		toolslist: ["css", "html", "JavaScript"],
 		liveLink: "https://moathal.github.io/itch-a-scetch",
 		sourceLink: "https://github.com/Moathal/itch-a-scetch",
