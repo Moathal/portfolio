@@ -17,6 +17,54 @@ const projTypes = document.querySelector(".specialty.flex");
 let projects = "";
 const frontProjects = [
 	{
+		title: "Middle East Weather",
+		image: "icons&imgs/1677246225145.png",
+		imageMin: "icons&imgs/mobile1677246225145.png",
+		description:
+			"It is an one page web app that shows the weather an time in some countries in middle east. Made using React redux.",
+		descriptionMin:
+			"This project lists some Middle eastern countries with their time weather.",
+		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
+		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
+	},
+	{
+		title: "Dynasty Entertainment",
+		image: "icons&imgs/1677246225145.png",
+		imageMin: "icons&imgs/mobile1677246225145.png",
+		description:
+			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
+		descriptionMin:
+			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
+		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
+		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
+	},
+	{
+		title: "Todo List",
+		image: "icons&imgs/Screenshot2023-02-24150747.png",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24150747.png",
+		description:
+			"Simple to do list that adds removes and moves multiple tasks. It is made using webpack and vanilla JS and connected to storage API to store delete or update tasks.",
+		descriptionMin:
+			"This website is one of Microverse projects. It is an all free website made to help people in adding deleting or editing their daily tasks.",
+		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		liveLink: "https://moathal.github.io/Todo-List",
+		sourceLink: "https://github.com/Moathal/Todo-List",
+	},
+	{
+		title: "Awesome Books",
+		image: "icons&imgs/Screenshot2023-02-24161736.png",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24161736.png",
+		description:
+			"This project lists some Awesome books and you can add you favorite to it. It is a single page application. Its also consist of a clock implemented without a library.",
+		descriptionMin:
+			"This project lists some Awesome books and you can add you favorite to it. It is a single page application.",
+		toolslist: ["css", "html", "bootstrap", "JavaScript"],
+		liveLink: "https://moathal.github.io/Awesome-books/",
+		sourceLink: "https://github.com/Moathal/Awesome-books",
+	},
+	{
 		title: "Fast Learn",
 		image: "icons&imgs/1660916560236.png",
 		imageMin: "icons&imgs/mobilefastlearn.png",
@@ -274,7 +322,7 @@ document.getElementById("popUpClose").addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-	if (projects == fullProjects) projectsTypeChanger("Fullstack");
+	if (projects == frontProjects) projectsTypeChanger("Frontend");
 	else if (projects == backProjects) projectsTypeChanger("Backend");
-	else if (projects == frontProjects) projectsTypeChanger("Frontend");
+	else if (projects == fullProjects) projectsTypeChanger("Fullstack");
 });
