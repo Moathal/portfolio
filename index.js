@@ -220,17 +220,17 @@ projTypes.addEventListener("click", (e) => {
 	) {
 		projTypes.childNodes.forEach((child) => {
 			if (child.tagName == "LI") {
-				child.firstChild.style.fontWeight = "normal";
-        child.firstChild.style.color = "#FFF";
-        child.firstChild.style.textDecoration = "none";
-        child.firstChild.style.cursor = "pointer";
+				child.firstElementChild.style.fontWeight = "400";
+				child.firstElementChild.style.color = "#FFF";
+				child.firstElementChild.style.textDecoration = "none";
+				child.firstElementChild.style.cursor = "pointer";
 			}
 		});
 		projectsTypeChanger(e.target.innerText);
 		e.target.style.fontWeight = "bold";
-    e.target.style.color = "#9390ff";
-    e.target.style.textDecoration = "underline overline"
-    e.target.style.cursor = "default";
+		e.target.style.color = "#9390ff";
+		e.target.style.textDecoration = "underline overline";
+		e.target.style.cursor = "default";
 	}
 });
 
@@ -274,7 +274,7 @@ document.getElementById("popUpClose").addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-		if ( projects == fullProjects)projectsTypeChanger("Fullstack");
-	  else if (projects == backProjects) projectsTypeChanger("Backend");
-		else if (projects == frontProjects) 	projectsTypeChanger("Frontend");
+	if (projects == fullProjects) projectsTypeChanger("Fullstack");
+	else if (projects == backProjects) projectsTypeChanger("Backend");
+	else if (projects == frontProjects) projectsTypeChanger("Frontend");
 });
