@@ -24,7 +24,7 @@ const frontProjects = [
 			"It is a mobile webapp that shows the weather in time in some countries in middle east. Made using React redux.",
 		descriptionMin:
 			"This project lists some Middle eastern countries with their time weather.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript", "React", "Redux"],
+		toolslist: ["css", "bootstrap", "React", "Redux"],
 		liveLink:
 			"https://634e92fdfb2d5a612a53cefe--adorable-gumption-bc705f.netlify.app",
 		sourceLink: "https://github.com/Moathal/MiddleEastWeather",
@@ -37,7 +37,7 @@ const frontProjects = [
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
 		descriptionMin:
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		toolslist: ["css", "html", "bootstrap", "JS", "Webpack"],
 		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
 		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
 	},
@@ -49,7 +49,7 @@ const frontProjects = [
 			"Simple to do list that adds removes and moves multiple tasks. It is made using webpack and vanilla JS and connected to storage API to store delete or update tasks.",
 		descriptionMin:
 			"This website is one of Microverse projects. It is an all free website made to help people in adding deleting or editing their daily tasks.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript", "Webpack"],
+		toolslist: ["css", "html", "bootstrap", "JS", "Webpack"],
 		liveLink: "https://moathal.github.io/Todo-List",
 		sourceLink: "https://github.com/Moathal/Todo-List",
 	},
@@ -61,7 +61,7 @@ const frontProjects = [
 			"This project lists some Awesome books and you can add you favorite to it. It is a single page application. Its also consist of a clock implemented without a library.",
 		descriptionMin:
 			"This project lists some Awesome books and you can add you favorite to it. It is a single page application.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript"],
+		toolslist: ["css", "html", "bootstrap", "JS"],
 		liveLink: "https://moathal.github.io/Awesome-books/",
 		sourceLink: "https://github.com/Moathal/Awesome-books",
 	},
@@ -73,7 +73,7 @@ const frontProjects = [
 			"This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience. It is an all free website made to help students in finding the right skills required in jobs market of fullstack web development. The courses are available free on the web and our job is to SUBJECTIVELY choose the best. The courses chosen are The Odin Project and CS50 feel free to google them and get to build an opinion about them.",
 		descriptionMin:
 			"This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience at all. All they need is dedication and time.",
-		toolslist: ["css", "html", "bootstrap", "JavaScript"],
+		toolslist: ["css", "html", "bootstrap", "JS"],
 		liveLink: "https://Moathal.github.io/Cap-Stone-1",
 		sourceLink: "https://github.com/Moathal/Cap-Stone-1",
 	},
@@ -85,7 +85,7 @@ const frontProjects = [
 			"This website is one of Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it. This calculator dose not use any library yet it is semi fully functional scientific calculator except for big numbers",
 		descriptionMin:
 			"Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it.",
-		toolslist: ["css", "html", "JavaScript"],
+		toolslist: ["css", "html", "JS"],
 		liveLink: "https://moathal.github.io/Calculater",
 		sourceLink: "https://github.com/Moathal/Calculater",
 	},
@@ -97,7 +97,7 @@ const frontProjects = [
 			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the number of pixels on the board. It works only on PCs",
 		descriptionMin:
 			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience. It works only on PCs",
-		toolslist: ["css", "html", "JavaScript"],
+		toolslist: ["css", "html", "JS"],
 		liveLink: "https://moathal.github.io/itch-a-scetch",
 		sourceLink: "https://github.com/Moathal/itch-a-scetch",
 	},
@@ -109,7 +109,7 @@ function addLanguagesList(newList, list) {
 	for (let i = 0; i < newList.length; i += 1) {
 		li = document.createElement("li");
 		list.appendChild(li);
-		li.innerText = newList[i];
+		li.innerHTML = `<img style="width:27px" src="icons&imgs/${newList[i]}.ico" alt="${newList[i]}">`;
 	}
 }
 
