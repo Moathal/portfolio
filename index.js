@@ -18,8 +18,8 @@ let projects = "";
 const frontProjects = [
 	{
 		title: "Middle East Weather",
-		image: "icons&imgs/Screenshot2023-02-24215705.png",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24215705.png",
+		image: "icons&imgs/Screenshot2023-02-24215705.ico",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24215705.ico",
 		description:
 			"It is a mobile webapp that shows the weather in time in some countries in middle east. Made using React redux.",
 		descriptionMin:
@@ -31,8 +31,8 @@ const frontProjects = [
 	},
 	{
 		title: "Dynasty Entertainment",
-		image: "icons&imgs/1677246225145.png",
-		imageMin: "icons&imgs/mobile1677246225145.png",
+		image: "icons&imgs/1677246225145.ico",
+		imageMin: "icons&imgs/mobile1677246225145.ico",
 		description:
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
 		descriptionMin:
@@ -43,8 +43,8 @@ const frontProjects = [
 	},
 	{
 		title: "Todo List",
-		image: "icons&imgs/Screenshot2023-02-24150747.png",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24150747.png",
+		image: "icons&imgs/Screenshot2023-02-24150747.ico",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24150747.ico",
 		description:
 			"Simple to do list that adds removes and moves multiple tasks. It is made using webpack and vanilla JS and connected to storage API to store delete or update tasks.",
 		descriptionMin:
@@ -55,8 +55,8 @@ const frontProjects = [
 	},
 	{
 		title: "Awesome Books",
-		image: "icons&imgs/Screenshot2023-02-24161736.png",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24161736.png",
+		image: "icons&imgs/Screenshot2023-02-24161736.ico",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24161736.ico",
 		description:
 			"This project lists some Awesome books and you can add you favorite to it. It is a single page application. Its also consist of a clock implemented without a library.",
 		descriptionMin:
@@ -67,8 +67,8 @@ const frontProjects = [
 	},
 	{
 		title: "Fast Learn",
-		image: "icons&imgs/1660916560236.png",
-		imageMin: "icons&imgs/mobilefastlearn.png",
+		image: "icons&imgs/1660916560236.ico",
+		imageMin: "icons&imgs/mobilefastlearn.ico",
 		description:
 			"This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience. It is an all free website made to help students in finding the right skills required in jobs market of fullstack web development. The courses are available free on the web and our job is to SUBJECTIVELY choose the best. The courses chosen are The Odin Project and CS50 feel free to google them and get to build an opinion about them.",
 		descriptionMin:
@@ -79,8 +79,8 @@ const frontProjects = [
 	},
 	{
 		title: "JS Scientific Calculator",
-		image: "icons&imgs/Screenshot2023-02-23105640.png",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-23105640.png",
+		image: "icons&imgs/Screenshot2023-02-23105640.ico",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-23105640.ico",
 		description:
 			"This website is one of Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it. This calculator dose not use any library yet it is semi fully functional scientific calculator except for big numbers",
 		descriptionMin:
@@ -91,8 +91,8 @@ const frontProjects = [
 	},
 	{
 		title: "Drawing Board",
-		image: "icons&imgs/Screenshot2023-02-23133150.png",
-		imageMin: "icons&imgs/Screenshot2023-02-23133150.png",
+		image: "icons&imgs/Screenshot2023-02-23133150.ico",
+		imageMin: "icons&imgs/Screenshot2023-02-23133150.ico",
 		description:
 			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the number of pixels on the board. It works only on PCs",
 		descriptionMin:
