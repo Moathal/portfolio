@@ -258,9 +258,9 @@ h4 {
   margin-left: 5%;
   display: flex;
 	font-style: normal;
-	font-weight: 600;
-  letter-spacing: 3px;
-	font-size: 1.8rem;
+	font-weight: 500;
+  letter-spacing: 1.7px;
+	font-size: 1.5rem;
 	line-height: 1.8rem;
 	color: #9490ff;
 	text-align: left;
@@ -313,6 +313,8 @@ li {
 	flex: 0 0 40px;
 	align-self: center;
 	min-width: 200px;
+  list-style: none;
+  justify-content: center;
 }
 
 .socialMedia li {
