@@ -32,10 +32,10 @@ body,
 	flex-direction: column;
 	width: 100%;
 	height: auto;
-  background-image: url(./icons&imgs/bgUpdate.ico);
+	background-image: url(./icons&imgs/bgUpdate.ico);
 	background-color: #000000;
-    background-size: auto;
-      background-position: bottom;
+	background-size: auto;
+	background-position: bottom;
 	align-items: center;
 	justify-content: center;
 }
@@ -93,17 +93,17 @@ a.menu-item {
 	align-items: stretch;
 	gap: calc((120 / 375) * 100vw);
 	margin-top: 75px;
-  background-image: url(./icons&imgs/bgUpdate.ico);
-  background-position: top;
+	background-image: url(./icons&imgs/bgUpdate.ico);
+	background-position: top;
 }
 
 .sub-container-1 {
 	font-size: 18px;
-  max-width: 95%;
+	max-width: 95%;
 	/* background-image: url(./icons&imgs/bgUpdate.ico); */
 	/* background-image: url(./icons&imgs/Top\ circles.png); */
 	/* background-size: fill; */
-  background: transparent;
+	background: transparent;
 	gap: 88px;
 }
 
@@ -216,28 +216,28 @@ hr {
 	list-style: none;
 	align-items: center;
 	justify-content: center;
-  border-color: #a7a6c8;
-  border-style: solid;
-  border-radius: 0 12px 0 12px;
-  border-width: 1px;
+	border-color: #a7a6c8;
+	border-style: solid;
+	border-radius: 0 12px 0 12px;
+	border-width: 1px;
 }
 
-.frame>ul {
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  display:flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  gap: 8px;
+.frame > ul {
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	gap: 8px;
 }
 
 .frame > ul > li > img {
-  min-width: 35.1px;
-  max-width: 54px;
-  height:auto;
+	min-width: 35.1px;
+	max-width: 54px;
+	height: auto;
 }
 
 ul {
@@ -255,23 +255,23 @@ a {
 }
 
 h4 {
-  margin-left: 5%;
-  display: flex;
+	margin-left: 5%;
+	display: flex;
 	font-style: normal;
 	font-weight: 500;
-  letter-spacing: 1.7px;
+	letter-spacing: 1.7px;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	color: #9490ff;
 	text-align: left;
-  width: 90%;
-  justify-content: space-between;
+	width: 90%;
+	justify-content: space-between;
 }
 
 h4 > .after {
-  margin-left: auto;
-  width: 8px;
-  justify-content: flex-end;
+	margin-left: auto;
+	width: 8px;
+	justify-content: flex-end;
 }
 
 li {
@@ -313,8 +313,8 @@ li {
 	flex: 0 0 40px;
 	align-self: center;
 	min-width: 200px;
-  list-style: none;
-  justify-content: center;
+	list-style: none;
+	justify-content: center;
 }
 
 .socialMedia li {
@@ -341,8 +341,8 @@ li {
 	/* background-image: url(icons&imgs/recentworkBG.png); */
 	background-image: url(icons&imgs/bgUpdate.ico);
 	background-size: auto;
-    background-size: auto;
-      background-position: bottom;
+	background-size: auto;
+	background-position: bottom;
 	gap: 40px;
 	width: var(--maxCont-width);
 	align-self: center;
@@ -749,12 +749,12 @@ form {
 		max-width: 100%;
 		justify-content: space-evenly;
 		max-height: min-content;
-    flex-direction: row;
-    gap: 0.33%;
+		flex-direction: row;
+		gap: 0.33%;
 	}
 
 	.frame {
-    max-width: 33%;
+		max-width: 33%;
 	}
 
 	.spprtItems {
