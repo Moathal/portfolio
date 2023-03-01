@@ -93,16 +93,12 @@ a.menu-item {
 	align-items: stretch;
 	gap: calc((120 / 375) * 100vw);
 	margin-top: 75px;
-	background-image: url(./icons&imgs/bgUpdate.ico);
 	background-position: top;
 }
 
 .sub-container-1 {
 	font-size: 18px;
 	max-width: 95%;
-	/* background-image: url(./icons&imgs/bgUpdate.ico); */
-	/* background-image: url(./icons&imgs/Top\ circles.png); */
-	/* background-size: fill; */
 	background: transparent;
 	gap: 88px;
 }
@@ -595,16 +591,23 @@ ul#tags-popUp > * {
 }
 
 footer {
-	gap: 88px;
+ margin-left: auto;
+ margin-right: auto;
+	gap: 44px;
 	margin-bottom: 88px;
+  background-color: #04023b74;
+  border-radius: 35px 0 35px 0;
+  max-width: 90%;
+  padding: 10px;
 }
 
 form {
-	gap: 24px;
+	gap: 12px;
+  width: 90%;
 }
 
 .field1 {
-	width: 295px;
+	min-width: 295px;
 	height: 16px;
 	text-align: left;
 	color: #000;
@@ -867,24 +870,6 @@ form {
 	.popup-imgPlaceHolder {
 		max-width: calc((1108 / 1440) * 100vw);
 		height: auto;
-	}
-}
-
-@keyframes bottom-to-top {
-	0% {
-		translatey: (200%);
-	}
-
-	33% {
-		translatey: (134%);
-	}
-
-	66% {
-		translatey: (68%);
-	}
-
-	100% {
-		translatey: (100%);
 	}
 }
 
