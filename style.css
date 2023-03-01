@@ -10,7 +10,7 @@
 	color: #fff;
 	font-family: "Poppins", sans-serif;
 	text-align: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 }
 
 /* dominant flex styling */
@@ -25,17 +25,26 @@
 }
 
 html,
-body,
+body{
+    display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      background-image: url(./icons&imgs/bgUpdate.ico);
+      background-color: #000000;
+      background-size: auto;
+      background-position: bottom;
+      align-items: center;
+      justify-content: center;
+}
+
 .main-container,
 .sub-container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: auto;
-	background-image: url(./icons&imgs/bgUpdate.ico);
-	background-color: #000000;
-	background-size: auto;
-	background-position: bottom;
+  background: transparent;
 	align-items: center;
 	justify-content: center;
 }
@@ -91,7 +100,7 @@ a.menu-item {
 
 .main-container {
 	align-items: stretch;
-	gap: calc((120 / 375) * 100vw);
+	gap: calc((60 / 375) * 100vw);
 	margin-top: 75px;
 	background-position: top;
 }
@@ -334,11 +343,6 @@ li {
 }
 
 .sub-container-2 {
-	/* background-image: url(icons&imgs/recentworkBG.png); */
-	background-image: url(icons&imgs/bgUpdate.ico);
-	background-size: auto;
-	background-size: auto;
-	background-position: bottom;
 	gap: 40px;
 	width: var(--maxCont-width);
 	align-self: center;
