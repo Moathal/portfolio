@@ -15,6 +15,23 @@ const submitButton = document.querySelector(".button.normal.email");
 const blocks = document.querySelector(".workBlocks");
 const projTypes = document.querySelector(".specialty.flex");
 let projects = "";
+const backProjects = [
+
+];
+const fullProjects = [
+	{
+		title: "Budget App",
+		image: "icons&imgs/1677927830202.ico",
+		imageMin: "icons&imgs/mobile1677927830202.ico",
+		description:
+			"A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+		descriptionMin:
+			"A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+		toolslist: ["css", "html", "bootstrap", "Ruby", "rails"],
+		liveLink: "https://budgetappmoathal.onrender.com",
+		sourceLink: "https://github.com/Moathal/Budget-app",
+	},
+];
 const frontProjects = [
 	{
 		title: "Middle East Weather",
