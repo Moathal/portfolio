@@ -20,6 +20,18 @@ const backProjects = [
 ];
 const fullProjects = [
 	{
+		title: "Blog App",
+		image: "icons&imgs/1678895682781.ico",
+		imageMin: "icons&imgs/1678895682781.ico",
+		description:
+			"Blog app is a classic example of a blog website. I created a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.",
+		descriptionMin:
+			"is a classic example of a blog website. I creates a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.",
+		toolslist: ["css", "html", "bootstrap", "Ruby", "rails"],
+		liveLink: "https://blogapp-ggjm.onrender.com/",
+		sourceLink: "https://github.com/Moathal/blog",
+	},
+	{
 		title: "Budget App",
 		image: "icons&imgs/1677927830202.ico",
 		imageMin: "icons&imgs/mobile1677927830202.ico",
