@@ -21,9 +21,9 @@ const backProjects = [
 		image: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
 		imageMin: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
 		description:
-			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repository by making API backend.",
+			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repositories by making API backend.",
 		descriptionMin:
-			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repository",
+			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repositories.",
 		toolslist: ["Ruby", "pgsql", "rails"],
 		liveLink: "None",
 		sourceLink: "https://github.com/Moathal/hotel-room-reservation",
