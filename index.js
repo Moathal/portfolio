@@ -16,7 +16,30 @@ const blocks = document.querySelector(".workBlocks");
 const projTypes = document.querySelector(".specialty.flex");
 let projects = "";
 const backProjects = [
-
+	{
+		title: "Catalog of my things",
+		image: "icons&imgs/Screenshot2023-03-24144009.ico",
+		imageMin: "icons&imgs/Screenshot2023-03-24144009.ico",
+		description:
+			"Catalog of my things is a project that uses console app to keep a record of different types of things you own: books, music albums, movies, and games. built using only Object oriented programming.",
+		descriptionMin:
+			"Catalog of my things is a project that uses console app to keep a record of different types of things you own: books, music albums, movies, and games. built using only Object oriented programming.",
+		toolslist: ["Ruby", "pgsql"],
+		liveLink: "None",
+		sourceLink: "https://github.com/Moathal/Catalog-of-my-things",
+	},
+	{
+		title: "School Library",
+		image: "icons&imgs/Screenshot2023-03-24141702.ico",
+		imageMin: "icons&imgs/Screenshot2023-03-24141702.ico",
+		description:
+			"Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. In terminal, this app will allow you to Add new students or teachers. Add new books. Save records of who borrowed a given book and when.",
+		descriptionMin:
+			"Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them in terminal.",
+		toolslist: ["Ruby", "pgsql"],
+		liveLink: "None",
+		sourceLink: "https://github.com/Moathal/School-library",
+	},
 ];
 const fullProjects = [
 	{
@@ -200,10 +223,16 @@ function openModal(id) {
 	img.src = projects[index].image;
 	description.innerText = projects[index].description;
 	addLanguagesList(projects[index].toolslist, list);
-	liveLink.setAttribute(
-		"onclick",
-		`window.location.href="${projects[index].liveLink}"`
-	);
+	if (projects[index].liveLink !== "None") {
+		liveLink.removeAttribute("disabled")
+		liveLink.setAttribute(
+			"onclick",
+			`window.location.href="${projects[index].liveLink}"`
+		);
+	} else {
+		liveLink.setAttribute('disabled','disabled')
+	}
+
 	sourceLink.setAttribute(
 		"onclick",
 		`window.location.href="${projects[index].sourceLink}"`
