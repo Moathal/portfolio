@@ -224,13 +224,13 @@ function openModal(id) {
 	description.innerText = projects[index].description;
 	addLanguagesList(projects[index].toolslist, list);
 	if (projects[index].liveLink !== "None") {
-		liveLink.removeAttribute("disabled")
+		liveLink.removeAttribute("disabled");
 		liveLink.setAttribute(
 			"onclick",
 			`window.location.href="${projects[index].liveLink}"`
 		);
 	} else {
-		liveLink.setAttribute('disabled','disabled')
+		liveLink.setAttribute("disabled", "disabled");
 	}
 
 	sourceLink.setAttribute(
