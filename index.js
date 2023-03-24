@@ -17,6 +17,18 @@ const projTypes = document.querySelector(".specialty.flex");
 let projects = "";
 const backProjects = [
 	{
+		title: "SleepOver API",
+		image: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
+		imageMin: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
+		description:
+			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repository by making API backend.",
+		descriptionMin:
+			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repository",
+		toolslist: ["Ruby", "pgsql", "rails"],
+		liveLink: "None",
+		sourceLink: "https://github.com/Moathal/hotel-room-reservation",
+	},
+	{
 		title: "Catalog of my things",
 		image: "icons&imgs/Screenshot2023-03-24144009.ico",
 		imageMin: "icons&imgs/Screenshot2023-03-24144009.ico",
