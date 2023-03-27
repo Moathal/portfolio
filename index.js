@@ -223,10 +223,11 @@ function projectsTypeChanger(type) {
 	if (type == "Fullstack") projects = fullProjects;
 	if (type == "Backend") projects = backProjects;
 	if (type == "Frontend") projects = frontProjects;
+	if (type == "All")  projects = [...frontProjects, ...backProjects, ...fullProjects]
 	resetProjectsList(projects);
 }
 
-projectsTypeChanger("Frontend");
+projectsTypeChanger("All");
 
 function openModal(id) {
 	const index = id.substring(7, id.length);
@@ -335,7 +336,8 @@ projTypes.addEventListener("click", (e) => {
 	if (
 		e.target.innerText == "Frontend" ||
 		e.target.innerText == "Backend" ||
-		e.target.innerText == "Fullstack"
+		e.target.innerText == "Fullstack" ||
+		e.target.innerText == "All"
 	) {
 		projTypes.childNodes.forEach((child) => {
 			if (child.tagName == "LI") {
@@ -396,4 +398,6 @@ window.addEventListener("resize", () => {
 	if (projects == frontProjects) projectsTypeChanger("Frontend");
 	else if (projects == backProjects) projectsTypeChanger("Backend");
 	else if (projects == fullProjects) projectsTypeChanger("Fullstack");
+	else if (projects == [...frontProjects, ...backProjects, ...fullProjects])
+		projectsTypeChanger("All");
 });

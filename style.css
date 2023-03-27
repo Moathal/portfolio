@@ -372,7 +372,7 @@ section.recentWork {
 
 .specialty {
 	margin: 0%;
-	gap: 12%;
+	gap: 10%;
 	list-style: none;
 	width: var(--mobile-medCont-width);
 	justify-content: center;
@@ -385,7 +385,7 @@ section.recentWork {
 	cursor: pointer;
 }
 
-#fEnd-link {
+#allStack-link {
 	font-weight: bold;
 	color: #9390ff;
 	text-decoration: underline overline;
