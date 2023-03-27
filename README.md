@@ -25,7 +25,8 @@ https://moathal.github.io/portfolio/
 
 👤 **Moathal S. Kachi**
 
-- GitHub: [@githubhandle](https://github.com/moathal)
+- [GitHub](https://github.com/moathal)
+- [Linkedin](https://www.linkedin.com/in/moathalkachi/)
 
 ## 🤝 Contributing
 
