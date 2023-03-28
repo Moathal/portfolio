@@ -33,7 +33,7 @@ body{
       background-image: url(./icons&imgs/bgUpdate.ico);
       background-color: #000000;
       background-size: auto;
-      background-position: bottom;
+      background-position: fixed;
       align-items: center;
       justify-content: center;
 }
@@ -102,7 +102,7 @@ a.menu-item {
 	align-items: stretch;
 	gap: calc((60 / 375) * 100vw);
 	margin-top: 75px;
-	background-position: top;
+	background-position: fixed;
 }
 
 .sub-container-1 {
