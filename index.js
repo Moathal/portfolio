@@ -173,7 +173,7 @@ function addLanguagesList(newList, list) {
 	for (let i = 0; i < newList.length; i += 1) {
 		li = document.createElement("li");
 		list.appendChild(li);
-		li.innerHTML = `<img style="width:27px" src="icons&imgs/${newList[i]}.ico" alt="${newList[i]}">`;
+		li.innerHTML = `<img style="width:35px" src="icons&imgs/${newList[i]}.ico" alt="${newList[i]}">`;
 	}
 }
 
