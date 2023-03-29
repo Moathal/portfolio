@@ -240,7 +240,7 @@ function openModal(id) {
 		liveLink.removeAttribute("disabled");
 		liveLink.setAttribute(
 			"onclick",
-			`window.location.href="${projects[index].liveLink}"`
+			`window.open('${projects[index].liveLink}', '_blank')`
 		);
 	} else {
 		liveLink.setAttribute("disabled", "disabled");
@@ -248,7 +248,7 @@ function openModal(id) {
 
 	sourceLink.setAttribute(
 		"onclick",
-		`window.location.href="${projects[index].sourceLink}"`
+		`window.open('${projects[index].sourceLink}', '_blank')`
 	);
 	popUp.style.display = "block";
 }
