@@ -502,8 +502,8 @@ ul.tags {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	overflow-y: auto;
 	display: none;
+	overflow-y: auto;
 }
 
 .modal {
@@ -874,6 +874,28 @@ form {
 	.popup-imgPlaceHolder {
 		max-width: calc((1108 / 1440) * 100vw);
 		height: auto;
+	}
+
+
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 5px rgb(21, 2, 104); 
+	  border-radius: 10px;
+	}
+	
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: rgba(14, 14, 68, 0.808); 
+	  border-radius: 5px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #0b012e; 
 	}
 }
 
