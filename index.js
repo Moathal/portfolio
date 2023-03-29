@@ -278,10 +278,6 @@ function showMobileMenu() {
 }
 
 
-function jumpTo(id) {
-	window.location.hash = id;
-	closeWindow();
-}
 
 function closeWindow(id) {
 	let showed = "";
@@ -299,6 +295,11 @@ function closeWindow(id) {
 		showed.style.display = "none";
 		showed.style.transform = "none";
 	}, 350); // add a delay to hide the modal after the transition is complete
+}
+
+function jumpTo(id) {
+	window.location.hash = id;
+	closeWindow("close");
 }
 
 function ErrorSpecifier(field, message) {
