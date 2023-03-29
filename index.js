@@ -250,7 +250,14 @@ function openModal(id) {
 		"onclick",
 		`window.open('${projects[index].sourceLink}', '_blank')`
 	);
+	popUp.style.opacity = 0;
 	popUp.style.display = "block";
+	popUp.style.transform = "translateY(100%)";
+	setTimeout(function () {
+		popUp.style.opacity = 1;
+		popUp.style.transform = "translateY(0)";
+	}, 50); // add a small delay before the opacity and transform changes
+	popUp.style.transition = "opacity 0.3s ease, transform 0.15s ease";
 }
 
 blocks.addEventListener("click", (e) => {
@@ -260,17 +267,38 @@ blocks.addEventListener("click", (e) => {
 });
 
 function showMobileMenu() {
-	mobileMenu.style.display = "block";
+		mobileMenu.style.opacity = 0;
+		mobileMenu.style.display = "block";
+		mobileMenu.style.transform = "translateX(200%)";
+		setTimeout(function () {
+			mobileMenu.style.opacity = 1;
+			mobileMenu.style.transform = "translateY(0)";
+		}, 50); // add a small delay before the opacity and transform changes
+		mobileMenu.style.transition = "opacity 0.3s ease, transform 0.15s ease";
 }
 
-function closeWindow() {
-	mobileMenu.style.display = "none";
-	popUp.style.display = "none";
-}
 
 function jumpTo(id) {
 	window.location.hash = id;
 	closeWindow();
+}
+
+function closeWindow(id) {
+	let showed = "";
+	if (id == "popUpClose") showed = popUp;
+	else if (id == "close") showed = mobileMenu; 
+	showed.style.opacity = 1;
+	showed.style.transition = "transform 0.3s ease, opacity 0.15s ease";
+	id == "popUpClose"
+		? (showed.style.transform = "translateY(-100%)")
+		: (mobileMenu.style.transform = "translateX(200%)");
+	setTimeout(function () {
+		showed.style.opacity = 0;
+	}, 50); // add a small delay before the opacity change
+	setTimeout(function () {
+		showed.style.display = "none";
+		showed.style.transform = "none";
+	}, 350); // add a delay to hide the modal after the transition is complete
 }
 
 function ErrorSpecifier(field, message) {
@@ -371,7 +399,7 @@ document.getElementById("DeskLinkContact").addEventListener("click", () => {
 });
 
 document.getElementById("close").addEventListener("click", () => {
-	closeWindow();
+	closeWindow("close");
 });
 
 document.getElementById("linkPortfolio").addEventListener("click", () => {
@@ -391,7 +419,7 @@ document.getElementById("linkReach").addEventListener("click", () => {
 });
 
 document.getElementById("popUpClose").addEventListener("click", () => {
-	closeWindow();
+	closeWindow("popUpClose");
 });
 
 window.addEventListener("resize", () => {
