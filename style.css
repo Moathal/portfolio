@@ -30,10 +30,10 @@ body{
       flex-direction: column;
       width: 100%;
       height: auto;
-      background-image: url(./icons&imgs/bgUpdate.ico);
+      background-image: url(./icons&imgs/bgUpdate.webp);
       background-color: #000000;
       background-size: auto;
-      background-position: fixed;
+      background-position: bottom;
       align-items: center;
       justify-content: center;
 }
@@ -53,7 +53,7 @@ body{
 	max-width: 100%;
 	height: 100%;
 	/* background-image: url(icons&imgs/shapes-mobile-menu.png); */
-	background-image: url(icons&imgs/bgUpdate.ico);
+	background-image: url(icons&imgs/bgUpdate.webp);
 	background-size: auto;
 	background-position: bottom;
 	background-color: #000000;
@@ -88,7 +88,7 @@ a.menu-item {
 }
 
 .menu-item::after {
-	content: url("icons&imgs/biggerUnion.png");
+	content: url("icons&imgs/biggerUnion.webp");
 	position: relative;
 	float: right;
 	margin-right: 12px;

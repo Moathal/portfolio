@@ -18,8 +18,8 @@ let projects = "";
 const backProjects = [
 	{
 		title: "SleepOver API",
-		image: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
-		imageMin: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.ico",
+		image: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.webp",
+		imageMin: "icons&imgs/WhatsAppImage2023-02-02at7.17.00PM.webp",
 		description:
 			"Sleepover is an App developed using React for Front-End and Ruby on Rails for Back-End as two separated repositories by making API backend.",
 		descriptionMin:
@@ -30,8 +30,8 @@ const backProjects = [
 	},
 	{
 		title: "Catalog of my things",
-		image: "icons&imgs/Screenshot2023-03-24144009.ico",
-		imageMin: "icons&imgs/Screenshot2023-03-24144009.ico",
+		image: "icons&imgs/Screenshot2023-03-24144009.webp",
+		imageMin: "icons&imgs/Screenshot2023-03-24144009.webp",
 		description:
 			"Catalog of my things is a project that uses console app to keep a record of different types of things you own: books, music albums, movies, and games. built using only Object oriented programming.",
 		descriptionMin:
@@ -42,8 +42,8 @@ const backProjects = [
 	},
 	{
 		title: "School Library",
-		image: "icons&imgs/Screenshot2023-03-24141702.ico",
-		imageMin: "icons&imgs/Screenshot2023-03-24141702.ico",
+		image: "icons&imgs/Screenshot2023-03-24141702.webp",
+		imageMin: "icons&imgs/Screenshot2023-03-24141702.webp",
 		description:
 			"Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. In terminal, this app will allow you to Add new students or teachers. Add new books. Save records of who borrowed a given book and when.",
 		descriptionMin:
@@ -56,8 +56,8 @@ const backProjects = [
 const fullProjects = [
 	{
 		title: "Blog App",
-		image: "icons&imgs/1678895682781.ico",
-		imageMin: "icons&imgs/1678895682781.ico",
+		image: "icons&imgs/1678895682781.webp",
+		imageMin: "icons&imgs/1678895682781.webp",
 		description:
 			"Blog app is a classic example of a blog website. I created a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.",
 		descriptionMin:
@@ -68,8 +68,8 @@ const fullProjects = [
 	},
 	{
 		title: "Budget App",
-		image: "icons&imgs/1677927830202.ico",
-		imageMin: "icons&imgs/mobile1677927830202.ico",
+		image: "icons&imgs/1677927830202.webp",
+		imageMin: "icons&imgs/mobile1677927830202.webp",
 		description:
 			"A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
 		descriptionMin:
@@ -82,8 +82,8 @@ const fullProjects = [
 const frontProjects = [
 	{
 		title: "Middle East Weather",
-		image: "icons&imgs/Screenshot2023-02-24215705.ico",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24215705.ico",
+		image: "icons&imgs/Screenshot2023-02-24215705.webp",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24215705.webp",
 		description:
 			"It is a mobile webapp that shows the weather in time in some countries in middle east. Made using React redux.",
 		descriptionMin:
@@ -95,8 +95,8 @@ const frontProjects = [
 	},
 	{
 		title: "Dynasty Entertainment",
-		image: "icons&imgs/1677246225145.ico",
-		imageMin: "icons&imgs/mobile1677246225145.ico",
+		image: "icons&imgs/1677246225145.webp",
+		imageMin: "icons&imgs/mobile1677246225145.webp",
 		description:
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
 		descriptionMin:
@@ -107,8 +107,8 @@ const frontProjects = [
 	},
 	{
 		title: "Todo List",
-		image: "icons&imgs/Screenshot2023-02-24150747.ico",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24150747.ico",
+		image: "icons&imgs/Screenshot2023-02-24150747.webp",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24150747.webp",
 		description:
 			"Simple to do list that adds removes and moves multiple tasks. It is made using webpack and vanilla JS and connected to storage API to store delete or update tasks.",
 		descriptionMin:
@@ -119,8 +119,8 @@ const frontProjects = [
 	},
 	{
 		title: "Awesome Books",
-		image: "icons&imgs/Screenshot2023-02-24161736.ico",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-24161736.ico",
+		image: "icons&imgs/Screenshot2023-02-24161736.webp",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-24161736.webp",
 		description:
 			"This project lists some Awesome books and you can add you favorite to it. It is a single page application. Its also consist of a clock implemented without a library.",
 		descriptionMin:
@@ -131,8 +131,8 @@ const frontProjects = [
 	},
 	{
 		title: "Fast Learn",
-		image: "icons&imgs/1660916560236.ico",
-		imageMin: "icons&imgs/mobilefastlearn.ico",
+		image: "icons&imgs/1660916560236.webp",
+		imageMin: "icons&imgs/mobilefastlearn.webp",
 		description:
 			"This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience. It is an all free website made to help students in finding the right skills required in jobs market of fullstack web development. The courses are available free on the web and our job is to SUBJECTIVELY choose the best. The courses chosen are The Odin Project and CS50 feel free to google them and get to build an opinion about them.",
 		descriptionMin:
@@ -143,8 +143,8 @@ const frontProjects = [
 	},
 	{
 		title: "JS Scientific Calculator",
-		image: "icons&imgs/Screenshot2023-02-23105640.ico",
-		imageMin: "icons&imgs/mobileScreenshot2023-02-23105640.ico",
+		image: "icons&imgs/Screenshot2023-02-23105640.webp",
+		imageMin: "icons&imgs/mobileScreenshot2023-02-23105640.webp",
 		description:
 			"This website is one of Odin Project Assignment mainly focuses on JS, but CSS and HTML is also essential in it. This calculator dose not use any library yet it is semi fully functional scientific calculator except for big numbers",
 		descriptionMin:
@@ -155,8 +155,8 @@ const frontProjects = [
 	},
 	{
 		title: "Drawing Board",
-		image: "icons&imgs/Screenshot2023-02-23133150.ico",
-		imageMin: "icons&imgs/Screenshot2023-02-23133150.ico",
+		image: "icons&imgs/Screenshot2023-02-23133150.webp",
+		imageMin: "icons&imgs/Screenshot2023-02-23133150.webp",
 		description:
 			"Odin Project Assignment based on Etch A Sketch mainly focuses on JS, CSS and HTML. Yet some other features were added to enhance the experience, like coloring erasing ad other colors choose the number of pixels on the board. It works only on PCs",
 		descriptionMin:
@@ -173,7 +173,7 @@ function addLanguagesList(newList, list) {
 	for (let i = 0; i < newList.length; i += 1) {
 		li = document.createElement("li");
 		list.appendChild(li);
-		li.innerHTML = `<img style="width:40px" src="icons&imgs/${newList[i]}.ico" alt="${newList[i]}">`;
+		li.innerHTML = `<img style="width:40px" src="icons&imgs/${newList[i]}.webp" alt="${newList[i]}">`;
 	}
 }
 
