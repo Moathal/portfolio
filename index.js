@@ -198,7 +198,7 @@ function resetProjectsList(projects) {
 		} else {
 			img = projects[index].image;
 		}
-		div.innerHTML = `<img src="${img}" alt="" class="imgPlaceHolder ${order[0]}" />
+		div.innerHTML = `<img style="border-radius: 12px 12px 12px 12px" src="${img}" alt="" class="imgPlaceHolder ${order[0]}" />
     <div class="rightBlock ${order[1]}">
       <h3 class="titlePost">${projects[index].title}</h3>
       <p class="supportingTxt">
