@@ -102,8 +102,8 @@ const frontProjects = [
 		descriptionMin:
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
 		toolslist: ["css", "html", "bootstrap", "JS", "Webpack"],
-		liveLink: "https://moathal.github.io/Capstone2-kanban/dist",
-		sourceLink: "https://github.com/Moathal/Capstone2-kanban",
+		liveLink: "https://moathal.github.io/ Dynasty-Entertainment/dist",
+		sourceLink: "https://github.com/Moathal/ Dynasty-Entertainment",
 	},
 	{
 		title: "Todo List",
@@ -138,8 +138,8 @@ const frontProjects = [
 		descriptionMin:
 			"This website is one of Microverse projects personalized by myself to make it a guidance for learning web development even if users have no experience at all. All they need is dedication and time.",
 		toolslist: ["css", "html", "bootstrap", "JS"],
-		liveLink: "https://Moathal.github.io/Cap-Stone-1",
-		sourceLink: "https://github.com/Moathal/Cap-Stone-1",
+		liveLink: "https://Moathal.github.io/Fast-Learn",
+		sourceLink: "https://github.com/Moathal/Fast-Learn",
 	},
 	{
 		title: "JS Scientific Calculator",
@@ -200,7 +200,7 @@ function resetProjectsList(projects) {
 		}
 		div.innerHTML = `<img style="border-radius: 12px 12px 12px 12px" src="${img}" alt="" class="imgPlaceHolder ${order[0]}" />
     <div class="rightBlock ${order[1]}">
-      <h3 class="titlePost">${projects[index].title}</h3>
+		<h3 class="titlePost">${projects[index].title}</h3>
       <p class="supportingTxt">
         ${project.descriptionMin}
       </p>

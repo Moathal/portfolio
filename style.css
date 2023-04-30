@@ -2,9 +2,12 @@
 	--maxCont-width: 100%;
 	--mobile-medCont-width: calc((327 / 375) * 100vw);
 	--mobile-minCont-width: calc((312 / 375) * 100vw);
-	background-image: url(./icons&imgs/bgUpdate.webp);
-	background-size:auto ;
-	background-position: bottom;
+	     background-image: url(./icons&imgs/bgUpdate.webp);
+      background-color: #000000;
+      background-size: auto;
+      background-position: bottom;
+			background-repeat: repeat-y;
+			color-scheme: light;
 }
 
 * {
@@ -33,11 +36,7 @@ body{
       flex-direction: column;
       width: 100%;
       height: auto;
-      background-image: url(./icons&imgs/bgUpdate.webp);
-      background-color: #000000;
-      background-size: auto;
-      background-position: bottom;
-			background-repeat: repeat-y;
+			background: transparent;
       align-items: center;
       justify-content: center;
 }
@@ -267,16 +266,20 @@ hr {
 }
 
 .frame {
+	margin: 12px;
 	flex: 0 0 100%;
 	list-style: none;
 	align-items: center;
 	justify-content: center;
 	border-color:#04023b74;
+	border-color:#505050cc;
 	border-style: solid;
 	border-radius: 0 12px 0 12px;
 	border-width: 1px;
 	background-color: #04023b74;
+	background-color: #505050cc;
 	box-shadow: 0px 0px 12px rgb(0, 29, 56);
+	box-shadow: 0px 0px 12px #2c2c2c;
 }
 
 .frame > ul {
@@ -457,10 +460,13 @@ section.recentWork {
 	gap: 24px;
 	border-style: solid;
 	border-color:#04023b74;
+	border-color:#505050cc;
 	border-radius: 32px 0 32px 0;
 	border-width: 1px;
 	background-color: #04023b74;
+	background-color: #505050e5;
 	box-shadow: 0px 0px 26px #04023b74;
+	box-shadow: 0px 0px 26px rgb(31, 31, 31);
 	padding: 12px;
 	margin-bottom: 12px;
 }
@@ -572,8 +578,8 @@ ul.tags {
 	padding: 2em;
 	margin-left: auto;
 	margin-right: auto;
-	background: rgba(255, 255, 255, 0.16);
-	border: 1px solid #fff;
+	background-color: #505050cc;
+	border: 0.5px solid #fff;
 	box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 	align-items: center;
 	text-align: center;
@@ -659,7 +665,9 @@ footer {
 	gap: 44px;
 	margin-bottom: 88px;
   background-color: #04023b74;
-  border-radius: 35px 0 35px 0;
+	background-color: #505050e5;
+	box-shadow: 0px 0px 26px rgb(31, 31, 31);
+  border-radius:  12px 35px 12px 35px;
   max-width: 90%;
   padding: 10px;
 }
