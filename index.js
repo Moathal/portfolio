@@ -102,8 +102,8 @@ const frontProjects = [
 		descriptionMin:
 			"It is project for rating TV shows and add comments on them. It is responsive and saves data in a Host API the TV series added a 30 anime.",
 		toolslist: ["css", "html", "bootstrap", "JS", "Webpack"],
-		liveLink: "https://moathal.github.io/ Dynasty-Entertainment/dist",
-		sourceLink: "https://github.com/Moathal/ Dynasty-Entertainment",
+		liveLink: "https://moathal.github.io/Dynasty-Entertainment/dist",
+		sourceLink: "https://github.com/Moathal/Dynasty-Entertainment",
 	},
 	{
 		title: "Todo List",
