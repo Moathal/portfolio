@@ -67,6 +67,30 @@ const fullProjects = [
 		sourceLink: "https://github.com/Moathal/blog",
 	},
 	{
+		title: "Private Event",
+		image: "icons&imgs/2023-12-04201257.webp",
+		imageMin: "icons&imgs/2023-12-04200639.webp",
+		description:
+			"A site lets user create events private or public, and attend events. An event can be attended by many users, and take place at specific location, date and time. All pages are real time updated and all uses are notified thanks to noticed and hotrails gems. Tried to use as much association case in the database as possible to push active record to its peak. Used sass, Bootstrap and stimulus for styling and responsiveness all embedded in webpack.",
+		descriptionMin:
+			"a site similar to a private Eventbrite which allows users to create events and then manage user signups.",
+		toolslist: ["css", "html", "bootstrap", "Ruby", "rails", "redis"],
+		liveLink: "None",
+		sourceLink: "https://github.com/Moathal/private-event",
+	},
+	{
+		title: "Recipe App",
+		image: "icons&imgs/2023-12-04165957.webp",
+		imageMin: "icons&imgs/2023-12-04170057.webp",
+		description:
+			"Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.",
+		descriptionMin:
+			"Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.",
+		toolslist: ["css", "html", "tailwind", "Ruby", "rails"],
+		liveLink: "None",
+		sourceLink: "https://github.com/edi-sipka/Recipe_app",
+	},
+	{
 		title: "Budget App",
 		image: "icons&imgs/1677927830202.webp",
 		imageMin: "icons&imgs/mobile1677927830202.webp",
